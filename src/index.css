@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    .main-text {
+
+        font-style: normal;
+        white-space: none;
+        word-wrap: none;
+        font-weight: 800;
+        font-size: 123.378px;
+        letter-spacing: -0.08em;
+
+        background: linear-gradient(86.85deg, #ECF0F1 0.87%, #000000 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+
+@layer components {
+    .btn-primary {
+        @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700;
+    }
+
+    .navOneText {
+        @apply text-right;
+    }
+
+    img {
+        @apply w-full h-full
+    }
+
+
+
+
+
+    .center {
+        @apply justify-center items-center flex
+    }
+
+    .BT {
+        @apply justify-between items-center flex
+    }
+
+
+
+    .FULL {
+
+        @apply w-full h-full
+    }
+
+
+    /* .main-text {
+
+        @apply font-extrabold text-[133.378px] leading-[134px] text-center tracking-[-0.08em] bg-[linear-gradient(86.85deg, #ECF0F1_0.87%, #000000_95%)] bg-clip-text text-transparent
+    } */
+
+
+
+
+
+
+
+
+
+
+
+}
