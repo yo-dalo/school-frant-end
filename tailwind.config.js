@@ -17,7 +17,9 @@ export default {
         accent: "#F97316",
       },
 
-
+      animation: {
+        'spin-slow': 'spin 30s linear infinite',
+      }
 
 
 

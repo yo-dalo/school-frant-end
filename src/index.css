@@ -49,6 +49,15 @@
     }
 
 
+    .EV {
+        @apply justify-evenly items-center flex
+    }
+
+
+    .FC {
+        @apply flex-col flex
+    }
+
 
     .FULL {
 
