@@ -3,10 +3,10 @@ import React from 'react'
 const PageTwo = () => {
   return (
     <div className='w-screen  overflow-hidden h-min-screen '>
-      <div className="w-full h-[90vh]  overflow-visible  center flex-col leading-[100.1px] bg-[linear-gradient(235.34deg,_#ECF0F1_36.62%,_#34495E_78.39%)]">
-        <h2 className='main-text h-fit text-center w-full'>welcome</h2>
-        <h2 className='main-text text-center w-full'>Yaduvanshi Degree </h2>
-        <h2 className='main-text h-fit text-center w-full'>College</h2>
+      <div className="w-full h-[90vh]  overflow-visible phone:uppercase  center flex-col leading-[100.1px] bg-[linear-gradient(235.34deg,_#ECF0F1_36.62%,_#34495E_78.39%)]">
+        <h2 className='main-text h-fit phone:text-6xl text-center w-full'>welcome</h2>
+        <h2 className='main-text text-center  phone:text-7xl w-full'>Yaduvanshi Degree </h2>
+        <h2 className='main-text h-fit text-center  phone:text-8xl w-full'>College</h2>
 
 
 

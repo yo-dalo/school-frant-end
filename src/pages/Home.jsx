@@ -20,7 +20,7 @@ const Home = () => {
             <Nav />
             <PageOne />
             <PageTwo />
-            <PageThree />
+            {/* <PageThree />
             <PageFour />
             <PageFive />
             <PageSix />
@@ -28,7 +28,7 @@ const Home = () => {
             <PageEight />
             <PageNine />
             <PageTen />
-            <PageEleven />
+            <PageEleven /> */}
         </main>
 
 
