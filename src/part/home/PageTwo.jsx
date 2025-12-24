@@ -3,7 +3,7 @@ import React from 'react'
 const PageTwo = () => {
   return (
     <div className='w-screen  h-min-screen '>
-      <div className="w-full h-[90vh] uppercase  center flex-col leading-[100.1px] bg-[linear-gradient(235.34deg,_#ECF0F1_36.62%,_#34495E_78.39%)]">
+      <div className="w-full h-[90vh]  overflow-visible  center flex-col leading-[100.1px] bg-[linear-gradient(235.34deg,_#ECF0F1_36.62%,_#34495E_78.39%)]">
         <h2 className='main-text'>welcome</h2>
         <h2 className='main-text'>Yaduvanshi Degree </h2>
         <h2 className='main-text'>College</h2>

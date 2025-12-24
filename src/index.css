@@ -20,6 +20,11 @@
         background-clip: text;
         text-fill-color: transparent;
     }
+
+
+    .none {
+        display: none;
+    }
 }
 
 
