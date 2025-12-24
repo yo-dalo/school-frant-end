@@ -14,10 +14,10 @@ const PageFour = () => {
             <h3 className="text-center phone:text-2xl  phone:text-left phone:leading-7 px-10 text-3xl pb-28 leading-8 font-semibold ">Our college provides quality education with a focus on holistic development. Dedicated faculty, modern facilities, and innovative programs create an engaging environment that nurtures learning, creativity, and growth for every student.</h3>
 
 
-            <div className="flex   gap-28 phone:gap-52 flex-col px-32 phone:px-3  ">
+            <div className="flex   gap-28 phone:gap-0 flex-col px-32 phone:px-3  ">
 
 
-                <div className=" w-full phone:FC phone:justify-start BT relativpx-72e  phone:relative  gap-10  phone:gap-5   border-t-4  border-black  phone:min-h-96 h-40">
+                <div className=" w-full phone:FC phone:justify-start BT relativpx-72e  phone:relative  gap-10  phone:gap-5   border-t-4  border-black  phone:min-h-[150vw] h-40">
                     <div className='-top-10 phone:-top-10 phone:left-0 font-medium bg-black text-white px-9 pl-20 py-1 absolute'>STUDENT///</div>
 
                     <div className="w-1/2  phone:w-full center phone:h-fit h-full">
@@ -31,7 +31,7 @@ const PageFour = () => {
 
                 </div>
 
-    <div className=" w-full phone:FC phone:justify-start BT relativpx-72e  phone:relative  gap-10  phone:gap-5   border-t-4  border-black  phone:min-h-96 h-40">
+    <div className=" w-full phone:FC phone:justify-start BT relativpx-72e  phone:relative  gap-10  phone:gap-5   border-t-4  border-black  phone:min-h-[150vw] h-40">
                     <div className='-top-10 phone:-top-10 phone:left-0 font-medium bg-black text-white px-9 pl-20 py-1 absolute'>STUDENT///</div>
 
                     <div className="w-1/2  phone:w-full center phone:h-fit h-full">
@@ -44,7 +44,7 @@ const PageFour = () => {
                     </div>
 
                 </div>
-    <div className=" w-full phone:FC phone:justify-start BT relativpx-72e  phone:relative  gap-10  phone:gap-5   border-t-4  border-black  phone:min-h-96 h-40">
+    <div className=" w-full phone:FC phone:justify-start BT relativpx-72e  phone:relative  gap-10  phone:gap-5   border-t-4  border-black phone:min-h-[150vw] h-40">
                     <div className='-top-10 phone:-top-10 phone:left-0 font-medium bg-black text-white px-9 pl-20 py-1 absolute'>STUDENT///</div>
 
                     <div className="w-1/2  phone:w-full center phone:h-fit h-full">
