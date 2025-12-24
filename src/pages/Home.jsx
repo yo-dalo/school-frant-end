@@ -15,7 +15,8 @@ import PageEleven from '../part/home/PageEleven'
 const Home = () => {
     return (
 
-        <main>
+        <main className='bg-red-400 '>
+
             <Nav />
             <PageOne />
             <PageTwo />

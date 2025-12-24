@@ -15,7 +15,7 @@ const PageSix = () => {
 
 
 
-      <div className="BT h-[40vw] px-12 py-9 gap-11 ">
+      <div className="BT h-[100%] px-12 py-9 gap-11 ">
         <div className="w-full grid grid-cols-5 auto-rows-[15vw] gap-1 h-full overflow-y-scroll place-items-center">
 
 

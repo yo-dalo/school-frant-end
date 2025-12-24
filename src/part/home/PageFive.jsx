@@ -18,7 +18,7 @@ const PageFive = () => {
 
 
 
-        <div className="w-screen px-10 py-10 FC bg-[linear-gradient(232.66deg,_#ECF0F1_58.64%,_#34495E_82.92%)] gap-10 min-h-screen">
+        <div className="w-screen overflow-hidden px-10 py-10 FC bg-[linear-gradient(232.66deg,_#ECF0F1_58.64%,_#34495E_82.92%)] gap-10 min-h-screen">
 
             <Swiper navigation={true} modules={[Navigation]} className="w-full   h-[41vw]">
 

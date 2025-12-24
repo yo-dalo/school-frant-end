@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageThree = () => {
     return (
-        <div className="w-full grid grid-cols-3 px-20 gap-14 min-h-screen">
+        <div className="w-screen overflow-hidden grid grid-cols-3 px-20 gap-14 min-h-screen">
 
             <div className=" flex flex-col gap-3">
                 <div className="w-full h-2/3 bg-red-700">

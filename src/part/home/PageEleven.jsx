@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageEleven = () => {
   return (
-    <div className="w-screen h-screen bg-mainOne">
+    <div className="w-screen overflow-hidden h-screen bg-mainOne">
 
       <div className=" grid-cols-[42%_70%]  px-7 grid w-screen h-[32vw] bg-main">
 

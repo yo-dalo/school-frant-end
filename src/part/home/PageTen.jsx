@@ -4,7 +4,7 @@ const PageTen = () => {
   return (
 
 
-    <div className="w-screen min-h-screen FC gap-8 bg-[linear-gradient(180deg,_#34495E_0%,_#ECF0F1_100%)]">
+    <div className="w-screen overflow-hidden min-h-screen FC gap-8 bg-[linear-gradient(180deg,_#34495E_0%,_#ECF0F1_100%)]">
 
       <h1 className='main-text text-center  leading-[0.9]'>CELEBRATING OUR ACADEMIC STAR</h1>
 
