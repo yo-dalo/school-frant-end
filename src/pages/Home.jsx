@@ -23,8 +23,8 @@ const Home = () => {
             <PageThree />
             <PageFour />
             <PageFive />
-            {/* <PageSix />
-            <PageSeven />
+            <PageSix />
+             {/*<PageSeven />
             <PageEight />
             <PageNine />
             <PageTen />
