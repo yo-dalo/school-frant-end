@@ -13,17 +13,17 @@ const PageSeven = () => {
             </div>
 
 
-            <div className="w-screen grid grid-cols-3  gap-14 px-12 py-9 min-h-[50vw] ">
+            <div className="w-screen grid grid-cols-3 phone:gap-1 phone:px-3  phone:min-h-[70vh] gap-14 px-12 py-9 min-h-[50vw] ">
 
-                <div className=" FC">
-                    <h1 className="text-7xl font-bold leading-[0.9]">Vision & Mission</h1>
+                <div className="FC phone:gap-2">
+                    <h1 className="text-7xl font-bold phone:text-3xl  phone:leading-6 leading-[0.9]">Vision & Mission</h1>
                     <div className="w-full  h-full bg-slate-800">
                         <img className='FULL' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
                     </div>
 
 
                 </div>
-                <div className=" FC gap-3 pt-16">
+                <div className=" FC gap-3 phone:pt-6 pt-16">
                     <div className="BT w-full h-28  gap-3">
                         <div className="FULL bg-slate-500"></div>
                         <div className="FULL bg-gray-600"></div>
@@ -36,7 +36,7 @@ const PageSeven = () => {
 
 
                 </div>
-                <div className=" pt-1w6">
+                <div className=" pt-1w6 phone:pt-6">
                     <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
                 </div>
 
@@ -44,7 +44,7 @@ const PageSeven = () => {
             </div>
 
 
-            <p className='w-4/5 font-semibold leading-tight  text-center m-auto text-2xl'>Technology is reshaping the education system by opening new learning opportunities for college students and faculty. Modern digital tools—such as virtual classrooms, smart learning platforms, and AI-based support—make education more flexible and accessible. Students can attend classes from anywhere, revisit recorded lectures, and explore learning resources far beyond traditional books. Faculty members also benefit through advanced tools that help track performance, personalize teaching, and stay connected with learners. In today’s colleges, technology boosts creativity through digital projects, presentations, and collaborative assignments. Overall, the integration of technology is building a smarter, more connected, and efficient academic environment. As innovation continues, the future of college education will become even more engaging, adaptive, and inclusive for every student.</p>
+            <p className='w-4/5 font-semibold phone:leading-5 leading-tight  phone:text-xl phone:w-full phone:px-3 phone:text-left text-center m-auto text-2xl'>Technology is reshaping the education system by opening new learning opportunities for college students and faculty. Modern digital tools—such as virtual classrooms, smart learning platforms, and AI-based support—make education more flexible and accessible. Students can attend classes from anywhere, revisit recorded lectures, and explore learning resources far beyond traditional books. Faculty members also benefit through advanced tools that help track performance, personalize teaching, and stay connected with learners. In today’s colleges, technology boosts creativity through digital projects, presentations, and collaborative assignments. Overall, the integration of technology is building a smarter, more connected, and efficient academic environment. As innovation continues, the future of college education will become even more engaging, adaptive, and inclusive for every student.</p>
 
 
 
