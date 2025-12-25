@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { motion } from "framer-motion";
 const PageTwo = () => {
   return (
     <div className='w-screen  overflow-hidden h-min-screen '>

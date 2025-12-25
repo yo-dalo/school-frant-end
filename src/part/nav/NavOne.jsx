@@ -1,21 +1,25 @@
 import React from 'react'
-
+import { motion } from "motion/react"
 const NavOne = () => {
     return (
         <div className='w-screen phone:px-3 overflow-hidden flex justify-around  phone:h-12 h-7 bg-main '>
 
 
-            <div className="center phone:gap-2 phone:text-xl phone:gap text-sm gap-5">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className="center phone:gap-2 phone:text-xl phone:gap text-sm gap-5">
                 <h4>simpal</h4>
                 <h4>modern</h4>
-            </div>
+            </motion.div>
 
 
 
 
 
 
-            <div className="  phone:gap-3 py-3 gap-8 flex h-full ">
+            <div className="  phone:gap-3 phone:py-3 py-2 gap-8 flex h-full ">
 
                 {
                     ["insta.png", "mata.png", "tuter.png", "yt.png"].map((e, i) => (
