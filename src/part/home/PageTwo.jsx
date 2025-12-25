@@ -1,15 +1,27 @@
 import React from 'react'
 import { motion } from "framer-motion";
 const PageTwo = () => {
+  const texts = ["welcome", "Yaduvanshi Degree", "College"];
   return (
     <div className='w-screen  overflow-hidden h-min-screen '>
-      <div className="w-full h-[90vh]  overflow-visible phone:uppercase  center flex-col leading-[100.1px] bg-[linear-gradient(235.34deg,_#ECF0F1_36.62%,_#34495E_78.39%)]">
-        <h2 className='main-text h-fit phone:text-6xl text-center w-full'>welcome</h2>
-        <h2 className='main-text text-center  phone:text-7xl w-full'>Yaduvanshi Degree </h2>
-        <h2 className='main-text h-fit text-center  phone:text-8xl w-full'>College</h2>
-
-
-
+      <div className="w-full h-[90vh] flex flex-col items-center justify-center gap-4 overflow-visible phone:uppercase leading-[100.1px] bg-[linear-gradient(235.34deg,#ECF0F1_36.62%,#34495E_78.39%)]">
+        {texts.map((text, idx) => (
+          <motion.h2
+            key={idx}
+            className="main-text text-center phone:text-[6vw] w-full 
+                     bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
+                     bg-clip-text text-transparent"
+            whileHover={{
+              scale: 1.2,
+              rotate: 5,
+              backgroundImage: "linear-gradient(90deg, #FACC15, #EF4444, #10B981)",
+              textShadow: "0px 0px 10px rgba(0,0,0,0.3)"
+            }}
+            transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
+          >
+            {text}
+          </motion.h2>
+        ))}
       </div>
 
      <div className="w-full h-[90vh] py-9 bg-[linear-gradient(51deg,#ECF0F1_57.12%,#34495E_73.92%)] overflow-hidden">
