@@ -11,7 +11,7 @@ const PageThree = () => {
 
                 <h1 className="text-6xl leading-[3rem]">BUILDING BRIGHTER FUTURES</h1>
 
-                <h6 className='w-1/2 leading-tight'>Admissions Open 2026-27</h6>
+                <h6 className='w-1/2 phone:font-semibold leading-tight'>Admissions Open 2026-27</h6>
 
             </div>
 
@@ -21,9 +21,9 @@ const PageThree = () => {
                 </div>
                 <h2 className="h2 text-xl phone:text-5xl font-medium">Overview</h2>
                 <h3 className=" text-lg phone:text-4xl ">Our College Journey</h3>
-                <p className=" text-xs phone:text-xl phone:px-3">Our school is committed to providing a balanced and holistic education that focuses on academic excellence, discipline, and character development. With well-qualified teachers, modern classrooms, and a safe learning environment, we ensure that every child receives the care and guidance they need to grow and succeed.</p>
-                <p className="text-xs phone:text-xl phone:px-3">We emphasize values, creativity, communication skills, and overall personality development. Through a variety of co-curricular and extra-curricular activities, students get opportunities to explore their interests and unlock their full potential.</p>
-                <p className="text-xs phone:text-xl phone:px-3">Our goal is to build confident, responsible, and future-ready students who can excel in every field of life.</p>
+                <p className=" text-xs phone:text-xl phone:font-light phone:px-3">Our school is committed to providing a balanced and holistic education that focuses on academic excellence, discipline, and character development. With well-qualified teachers, modern classrooms, and a safe learning environment, we ensure that every child receives the care and guidance they need to grow and succeed.</p>
+                <p className="text-xs phone:text-xl phone:font-light phone:px-3">We emphasize values, creativity, communication skills, and overall personality development. Through a variety of co-curricular and extra-curricular activities, students get opportunities to explore their interests and unlock their full potential.</p>
+                <p className="text-xs phone:text-xl phone:font-light phone:px-3">Our goal is to build confident, responsible, and future-ready students who can excel in every field of life.</p>
             </div>
 
             <div className=" flex flex-col gap-3">
@@ -32,7 +32,7 @@ const PageThree = () => {
                 </div>
                 <h1 className=" text-xl font-medium  phone:text-5xl">Why Choose Ydc</h1>
 
-                <ol className='text-black   list-disc  pl-7 text-lg'>
+                <ol className='text-black phone:font-light  list-disc  pl-7 text-lg'>
                     <li>100% Placement Assistance</li>
                     <li>Highly Qualified & Experienced Faculty</li>
                     <li>Modern Labs & Smart Classrooms</li>

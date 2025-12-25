@@ -23,12 +23,12 @@ const Home = () => {
             <PageThree />
             <PageFour />
             <PageFive />
-            {/* <PageSix />
+            <PageSix />
             <PageSeven />
             <PageEight />
             <PageNine />
             <PageTen />
-            <PageEleven /> */}
+            <PageEleven />
         </main>
 
 

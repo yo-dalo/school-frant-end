@@ -17,7 +17,7 @@ const images = [
 
 const PageNine = () => {
     return (
-        <div className="w-full  overflow-hidden h-[50vw] py-12 gap-5  grid grid-rows-2 bg-main">
+        <div className="w-full  phone:h-[70vh]     overflow-hidden h-[50vw] py-12 gap-5  grid grid-rows-2 bg-main">
          <div className='center overflow-scroll gap-4'>
             <div className='min-w-fit h-full break-inside-avoid' ><img className='FULL' src="https://i.pinimg.com/736x/a0/d8/82/a0d882b093ecc4da0eecd34258b63423.jpg" alt="" /></div>
             <div className='min-w-fit h-full break-inside-avoid' ><img className='FULL' src="https://i.pinimg.com/736x/a0/d8/82/a0d882b093ecc4da0eecd34258b63423.jpg" alt="" /></div>
