@@ -28,7 +28,7 @@ const Home = () => {
          <PageEight />
              <PageNine />
            <PageTen />
-            <PageEleven /> 
+            {/* <PageEleven />  */}
         </main>
 
 
