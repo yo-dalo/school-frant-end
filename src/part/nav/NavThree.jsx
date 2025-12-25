@@ -2,7 +2,7 @@ import React from 'react'
 
 export const NavThree = () => {
     return (
-        <div className='w-screen BT  px-16 h-10 bg-main '>
+        <div className='w-screen BT   px-[4vw] h-10 bg-main '>
 
             {
                 [
@@ -26,7 +26,7 @@ export const NavThree = () => {
                     .map((e, i) => (
 
 
-                        <div key={i} className="text-white   text-sm font-normal">
+                        <div key={i} className="text-white phone:none  text-[1.2vw] font-normal">
                             <h3>{e}</h3>
                         </div>
 

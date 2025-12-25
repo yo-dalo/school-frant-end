@@ -2,7 +2,7 @@ import React from 'react'
 
 export const NavTwo = () => {
   return (
-     <div className='w-screen BT px-16 h-20 bg-white '>
+     <div className='w-screen BT phone:px-5 px-16 phone:h-12 h-20 bg-white '>
                 
 <div className="h-full w-auto">
 

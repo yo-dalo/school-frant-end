@@ -15,19 +15,20 @@ import PageEleven from '../part/home/PageEleven'
 const Home = () => {
     return (
 
-        <main>
+        <main className=' '>
+
             <Nav />
             <PageOne />
             <PageTwo />
             <PageThree />
             <PageFour />
             <PageFive />
-            <PageSix />
+            {/* <PageSix />
             <PageSeven />
             <PageEight />
             <PageNine />
             <PageTen />
-            <PageEleven />
+            <PageEleven /> */}
         </main>
 
 

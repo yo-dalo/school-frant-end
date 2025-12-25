@@ -14,12 +14,18 @@ export default {
           dark: "#1E40AF",
         },
         main: "#34495E",
+        mainOne: "#ECF0F1",
         accent: "#F97316",
       },
 
       animation: {
         'spin-slow': 'spin 30s linear infinite',
-      }
+
+      },
+      screens: {
+        'phone': { max: '600px' },
+      },
+
 
 
 

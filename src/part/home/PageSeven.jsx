@@ -3,7 +3,7 @@ import React from 'react'
 const PageSeven = () => {
     return (
 
-        <div className='w-screen min-h-screen py-6 bg-[linear-gradient(59.79deg,_#ECF0F1_67.3%,_#34495E_86.1%)]'>
+        <div className='w-screen overflow-hidden min-h-screen py-6 bg-[linear-gradient(59.79deg,_#ECF0F1_67.3%,_#34495E_86.1%)]'>
 
             <div className="center  px-8 gap-10">
                 <hr className='w-full' />
