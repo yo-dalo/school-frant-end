@@ -12,7 +12,7 @@ const PageTwo = () => {
 
       </div>
 
-      <div className="w-full h-[90vh]  py-9 bg-[linear-gradient(51deg,_#ECF0F1_57.12%,_#34495E_73.92%)] ">
+     <div className="w-full h-[90vh] py-9 bg-[linear-gradient(51deg,#ECF0F1_57.12%,#34495E_73.92%)] overflow-hidden">
 
         <div className="BT   gap-7 font-bold leading-tight  px-10">
           <h2 className='phone:none'>Welcome to Our School</h2>
