@@ -43,7 +43,7 @@ const PageFive = () => {
                                             <h3 className="text-xl">INTEODUTION</h3>
                                             <h1 className="text-8xl phone:text-7xl phone:leading-[0.9] font-bold leading-[0.8]">RAO BAHADUR SINGH</h1>
 
-                                            <p className="pr-20 phone:text-xl phone:pr-0">Technology has transformed the modern education system by creating new opportunities for both students and teachers. Digital tools such as online classrooms, interactive learning platforms, and AI-powered assistants have made learning more flexible and accessible than</p>
+                                            <p className="pr-20 phone:text-xl phone:font-light phone:pr-0">Technology has transformed the modern education system by creating new opportunities for both students and teachers. Digital tools such as online classrooms, interactive learning platforms, and AI-powered assistants have made learning more flexible and accessible than</p>
 
                                         </div>
 
