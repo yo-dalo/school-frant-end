@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const NavTwo = () => {
   return (
      <div className='w-screen BT phone:px-5 px-16 phone:h-12 h-20 bg-white '>
                 
-<div className="h-full w-auto">
+<Link to={"/"} className="h-full w-auto">
 
 <img src="img/logo/logo.png" alt="" />
 
-</div>
+</Link>
 
 
 

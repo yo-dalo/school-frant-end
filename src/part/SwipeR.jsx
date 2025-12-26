@@ -11,8 +11,8 @@ import { Navigation } from 'swiper/modules';
 
 const SwipeR = () => {
     return (
-        <div className="w-screen h-[40vw] bg-main">
-            <Swiper navigation={true} modules={[Navigation]} className="w-full h-full">
+        <div className="w-screen z-50 h-[40vw] bg-main">
+            <Swiper navigation={true}  modules={[Navigation]} className="w-full z-1 h-full">
 
                 {
                     [

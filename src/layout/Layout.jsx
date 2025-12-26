@@ -5,7 +5,7 @@ import Footer from '../part/footer/Footer'
 const Layout = ({ title, children }) => {
     return (
 
-        <main className=' w-screen overflow-hidden '>
+        <main className=' w-screen relative  '>
             <Nav />
             {children}
             <Footer />
