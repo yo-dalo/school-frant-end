@@ -16,7 +16,6 @@ import Layout from '../layout/Layout'
 
 const Home = () => {
     return (
-
         <Layout>
             <PageOne />
             <PageTwo />
@@ -30,7 +29,6 @@ const Home = () => {
             <PageTen />
             <PageEleven />
         </Layout>
-
     )
 }
 
