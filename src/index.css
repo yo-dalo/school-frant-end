@@ -26,24 +26,24 @@
         display: none;
     }
 
-          
 
 
-    .welcome-text{
 
-font-style: normal;
-font-weight: 800;
-font-size: 133.378px;
-line-height: 134px;
-/* or 101% */
-text-align: center;
-letter-spacing: -0.08em;
+    .welcome-text {
 
-background: linear-gradient(86.85deg, #ECF0F1 0.87%, #000000 95%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 133.378px;
+        line-height: 134px;
+        /* or 101% */
+        text-align: center;
+        letter-spacing: -0.08em;
+
+        background: linear-gradient(86.85deg, #ECF0F1 0.87%, #000000 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
 
     }
 
@@ -97,6 +97,14 @@ text-fill-color: transparent;
         @apply flex-col flex
     }
 
+    .FC-C {
+        @apply flex-col flex justify-center items-center
+    }
+
+
+     .FC-S {
+        @apply flex-col flex justify-start items-start
+    }
 
     .FULL {
 
