@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "motion/react"
 import { index } from "../../pagesConfig/index"
+import { Link } from "react-router-dom"
 
 export const NavThree = () => {
     return (
@@ -44,12 +45,12 @@ export const NavThree = () => {
                             >
                                 <div className="flex flex-col p-2">
                                     {item.sub.map((subItem, subIdx) => (
-                                        <h3
+                                       <Link to={`/${subItem.slug.toLowerCase().replace(/\s+/g, "-")}`}
                                             key={subIdx}
                                             className="px-3 py-2 text-sm rounded-lg text-white/90 hover:text-white hover:bg-white/10 transition-all"
                                         >
                                             {subItem.slug}
-                                        </h3>
+                                        </Link>
                                     ))}
                                 </div>
                             </motion.div>
