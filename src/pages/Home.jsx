@@ -12,13 +12,12 @@ import PageNine from '../part/home/PageNine'
 import PageTen from '../part/home/PageTen'
 import PageEleven from '../part/home/PageEleven'
 import Footer from '../part/footer/Footer'
+import Layout from '../layout/Layout'
 
 const Home = () => {
     return (
 
-        <main className=' '>
-
-            <Nav />
+        <Layout>
             <PageOne />
             <PageTwo />
             <PageThree />
@@ -30,20 +29,7 @@ const Home = () => {
             <PageNine />
             <PageTen />
             <PageEleven />
-            <Footer />
-        </main>
-
-
-
-
-
-
-
-
-
-
-
-
+        </Layout>
 
     )
 }
