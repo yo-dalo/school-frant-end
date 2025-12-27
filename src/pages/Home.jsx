@@ -13,6 +13,7 @@ import PageTen from '../part/home/PageTen'
 import PageEleven from '../part/home/PageEleven'
 import Footer from '../part/footer/Footer'
 import Layout from '../layout/Layout'
+import PageTwelve from '../part/home/PageTwelve'
 
 const Home = () => {
     return (
@@ -28,6 +29,7 @@ const Home = () => {
             <PageNine />
             <PageTen />
             <PageEleven />
+            <PageTwelve />
         </Layout>
     )
 }
