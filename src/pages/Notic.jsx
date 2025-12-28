@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Noitc = () => {
-    return (
-        <div>noitc</div>
-    )
+const Notic = () => {
+  return (
+    <div>Notic</div>
+  )
 }
+
+export default Notic

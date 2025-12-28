@@ -47,7 +47,7 @@ export const NavThree = () => {
                                 <div className="flex flex-col p-2">
 
                                     {item.sub.map((subItem, subIdx) => (
-                                        <Link to={`/${subItem.slug.toLowerCase().replace(/\s+/g, "-")}`}
+                                        <Link to={`/${subItem?.link ? subItem?.link : subItem.slug}`}
                                             key={subIdx}
                                             className="px-3 py-2  text-sm rounded-lg text-main hover:text-white hover:bg-main transition-all"
                                         >

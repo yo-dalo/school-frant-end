@@ -1,11 +1,17 @@
+import Notic from "../pages/Notic";
+
+
+
 const test = {
     slug: "notic",
+    link: "link",
     title: "About Us",
     sub: [
         {
             slug: "about-school/:id",
+            link: "link",
             title: "About Our School",
-            content: "Our school is dedicated to providing a high-quality education that nurtures students to reach their full potential in all aspects of life..."
+            content: <Notic />,
         },
         {
             slug: "our-mission",

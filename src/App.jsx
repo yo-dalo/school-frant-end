@@ -10,7 +10,7 @@ import PageTitle from './part/utils/PageTitle';
 import { useLocation } from "react-router-dom";
 import Yo from "./part/utils/Yo";
 import { useAuth } from "./context/AuthContext";
-import { Noitc } from './pages/Notic';
+import  Noitc  from './pages/Notic';
 
 function App() {
   const pathname = useLocation();
@@ -45,20 +45,20 @@ function App() {
 
         <Route path="notic/:id" element={
           <>
-          <PageTitle title={`ydc`} />
+            <PageTitle title={`ydc`} />
             <PagesLayout title={"helo"} content={"helo"}>
-                <>
-                  <PageTitle title={"hello"} />
-                </>
-              </PagesLayout>
+              <>
+                <PageTitle title={"hello"} />
+              </>
+            </PagesLayout>
 
-        </>
+          </>
         } />
 
 
 
 
-        {index.map((e, i) => (
+        {/* {index.map((e, i) => (
           e.sub.map((e, i) => (
             <Route path={`${e.slug}`} element={
               <PagesLayout title={e.title} content={e.content}>
@@ -70,7 +70,7 @@ function App() {
 
 
 
-        ))}
+        ))} */}
 
         {resData?.map((e, i) => (
           e.pages.map((e, i) => (
@@ -86,6 +86,19 @@ function App() {
 
         ))}
 
+        {index.map((ex, i) => (
+          ex.sub.map((e, i) => (
+        <Route path={`/${e?.link ? e?.link : e.slug}`} element={
+          <PagesLayout title={e.title} content={e?.content}>
+            <>
+              <PageTitle title={`${e.slug}`} />
+            </>
+          </PagesLayout>} />
+        ))
+
+
+
+        ))}
 
 
       </Routes>
