@@ -8,15 +8,27 @@ import { index } from './pagesConfig/index';
 import PagesLayout from './layout/PagesLayout';
 import PageTitle from './part/utils/PageTitle';
 import { useLocation } from "react-router-dom";
-function App() {
- const pathname = useLocation();
+import Yo from "./part/utils/Yo";
+import { useAuth } from "./context/AuthContext";
 
+function App() {
+  const pathname = useLocation();
+  const { resData } = useAuth();
 
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    
+
   }, [pathname]);
+
+
+
+
+
+
+
+
+
 
 
   return (
@@ -28,15 +40,11 @@ function App() {
         </>
         } />
         {index.map((e, i) => (
-
-
           e.sub.map((e, i) => (
             <Route path={`${e.slug}`} element={
               <PagesLayout title={e.title} content={e.content}>
                 <>
-
                   <PageTitle title={`${e.slug}`} />
-
                 </>
               </PagesLayout>} />
           ))
@@ -44,6 +52,22 @@ function App() {
 
 
         ))}
+
+        {resData?.map((e, i) => (
+          e.pages.map((e, i) => (
+            <Route path={`/${e.Name.toLowerCase().replace(/\s+/g, "-")}`} element={
+              <PagesLayout title={e?.title} content={e?.Page_Data}>
+                <>
+                  <PageTitle title={`${e?.Name}`} />
+                </>
+              </PagesLayout>} />
+          ))
+
+
+
+        ))}
+
+
 
       </Routes>
     </>

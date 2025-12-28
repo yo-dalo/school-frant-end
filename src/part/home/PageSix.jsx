@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useAuth } from "../../context/AuthContext"
 const PageSix = () => {
+  const { resNotification } = useAuth();
   return (
     <div className='w-screen h-screen py-10 bg-main'>
 
@@ -19,17 +20,17 @@ const PageSix = () => {
         <div className="w-full phone:grid-cols-1 phone:gap-16 phone:auto-rows-[30vw] grid grid-cols-5 auto-rows-[15vw] gap-1 h-full overflow-y-scroll place-items-center">
 
 
-          {[1, 1, 1, 1, 1, 111, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ,].map((e, i) => (
+          {resNotification?.map((e, i) => (
 
             <div key={i} className=" py-9 phone:py-12 px-4 bg-white phone:w-full w-[15vw] relative  FC items-center phone:h-[35vw] h-[12vw]">
-              <div className="w-[80%] h-10  text-3xl -top-4 -rotate-3 absolute  text-center font-bold bg-black text-white">
-                03:00 PM
+              <div className="w-[80%] overflow-hidden  h-10  text-3xl -top-4 -rotate-3 absolute  text-center font-bold bg-black text-white">
+                {e?.Date}
               </div>
 
-              <h2 className=" text-xl leading-4 font-black ">CULTURAL
-                SHOWCASES</h2>
-              <h4 className='text-xs py-2 leading-tight '>Exprience traditional dances
-                art display, and storytelling</h4>
+              <h2 className=" text-xl leading-4 font-black ">{e?.Name}
+              </h2>
+              <h4 className='text-xs py-2 leading-tight '>{e?.Title}
+                </h4>
 
 
             </div>

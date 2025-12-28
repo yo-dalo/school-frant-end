@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+
 import Yo from './utils/Yo';
 import { useState } from 'react';
 
@@ -28,7 +30,22 @@ const SwipeR = () => {
 
     return (
         <div className="w-screen z-50 h-[40vw] bg-main">
-            <Swiper navigation={true} modules={[Navigation]} className="w-full z-1 h-full">
+            <Swiper
+
+
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+
+                className="w-full z-1 h-full">
 
                 {
 
@@ -36,7 +53,7 @@ const SwipeR = () => {
 
 
                         <SwiperSlide key={i} className='FULL'>
-                            <img className='object-contain  ' src={`uploads/${e.Image}`} alt="" />
+                            <img className='object-contain  ' src={`uploads/${e?.Image}`} alt="" />
                         </SwiperSlide>
 
                     ))
