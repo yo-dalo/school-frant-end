@@ -19,11 +19,11 @@ const Footer = () => {
 
         {/* Logo + Description */}
         <div>
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex  items-center gap-4 mb-6">
             <img
               src="/img/logo/logo.png"
               alt="Yaduvanshi"
-              className="w-26 h-20 object-cover"
+              className="w-30 h-fit md:w-30 md:w-56 object-cover"
             />
           
           </div>

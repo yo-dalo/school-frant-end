@@ -2,14 +2,14 @@ import React from 'react'
 
 const PageThree = () => {
     return (
-        <div className="w-screen phone:py-8 bg-mainOne  phone:grid-cols-1 overflow-hidden grid grid-cols-3 px-20 phone:px-0  gap-14 min-h-screen">
+        <div className="w-screen phone:py-8  md:py-8 bg-mainOne  phone:grid-cols-1 overflow-hidden grid grid-cols-3 px-20 phone:px-0  md:gap-5 md:px-2 gap-14 min-h-screen">
 
             <div className="  flex flex-col gap-3">
                 <div className="w-full phone:h-96  h-2/3 bg-red-700">
                     <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" className="FULL object-cover" />
                 </div>
 
-                <h1 className="text-6xl leading-[3rem]">BUILDING BRIGHTER FUTURES</h1>
+                <h1 className="text-6xl md:text-4xl leading-[3rem]">BUILDING BRIGHTER FUTURES</h1>
 
                 <h6 className='w-1/2 phone:font-semibold leading-tight'>Admissions Open 2026-27</h6>
 

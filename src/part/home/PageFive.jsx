@@ -35,7 +35,7 @@ const PageFive = () => {
                 modules={[Autoplay, Pagination, Navigation]}
 
 
-                className="w-full  phone:min-h-[130vh]  h-[41vw]">
+                className="w-full md:min-h-[110vh] md:h-fit phone:min-h-[130vh]  h-[41vw]">
 
                 {
                     resMsg?.map((e, i) => (
@@ -46,14 +46,14 @@ const PageFive = () => {
 
                                 <div className="flex-1">
 
-                                    <div className="BT phone:FC phone:overflow-hidden gap-10 FULL">
-                                        <div className="  phone:w-full w-1/2 h-full">
+                                    <div className="BT phone:FC md:FC phone:overflow-hidden gap-10 FULL">
+                                        <div className="  md:w-full phone:w-full w-1/2 h-full">
                                             <img className='object-cover' src={`uploads/${e?.Image}`} alt="i" />
 
                                         </div>
-                                        <div className="w-1/2 phone:w-full  FC gap-3 p-3 h-full">
+                                        <div className="w-1/2 phone:w-full md:w-full FC gap-3 p-3 h-full">
                                             <h3 className="text-xl">INTEODUTION</h3>
-                                            <h1 className="text-8xl phone:text-7xl phone:leading-[0.9] font-bold leading-[0.8]">{e.Name}</h1>
+                                            <h1 className="text-8xl md:text-7xl phone:text-7xl phone:leading-[0.9] font-bold leading-[0.8]">{e.Name}</h1>
 
                                             <p className="pr-20 phone:text-xl phone:font-light phone:pr-0">{e?.Description}</p>
 
@@ -103,9 +103,9 @@ const PageFive = () => {
 
 
 
-            <div className=" px-72 phone:px-0   w-full">
+            <div className=" px-72 phone:px-0 md:px-0   w-full">
 
-                <h1 className='main-text phone:text-8xl leading-[0.9] text-center '>NEWS & EVENTS</h1>
+                <h1 className='main-text phone:text-8xl md:text-7xl md:leading-[0.8] leading-[0.9] text-center '>NEWS & EVENTS</h1>
 
             </div>
 

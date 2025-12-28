@@ -21,7 +21,7 @@ export const NavFour = () => {
             {resData.map((item, idx) => (
                 <div
                     key={idx}
-                    className="text-white  phone:none text-[1.1vw] font-medium tracking-wide"
+                    className="text-white  md:none phone:none text-[1.1vw] font-medium tracking-wide"
                 >
 
                     <motion.h3

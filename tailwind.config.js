@@ -24,6 +24,7 @@ export default {
       },
       screens: {
         'phone': { max: '600px' },
+        "md": { max: '1020px' },
       },
 
 
