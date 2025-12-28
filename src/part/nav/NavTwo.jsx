@@ -7,7 +7,7 @@ export const NavTwo = () => {
                 
 <Link to={"/"} className="h-full w-auto">
 
-<img src="img/logo/logo.png" alt="" />
+<img src="/img/logo/logo.png" alt="" />
 
 </Link>
 
@@ -24,7 +24,7 @@ export const NavTwo = () => {
 
 <div className="h-full w-auto">
 
-<img src="img/x/ad.png" alt="" />
+<img src="/img/x/ad.png" alt="" />
 
 </div>
 
@@ -33,7 +33,7 @@ export const NavTwo = () => {
 
 <div className="h-full py-3 w-auto">
 
-<img src="img/x/n1.png" alt="" />
+<img src="/img/x/n1.png" alt="" />
 
 </div>
 

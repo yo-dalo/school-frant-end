@@ -1,9 +1,11 @@
 import about from "./About"
 import Academics from "./Academics"
 import Achievements from "./Achievements"
+import test from "./test";
+
 export const index = [
     { ...about },
-    
+    { ...test },
     {
         slug: "Why Only YDC", title: "Why Only YDC", sub: [
             {
@@ -26,6 +28,19 @@ export const index = [
 
     Achievements,
     Academics,
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     {

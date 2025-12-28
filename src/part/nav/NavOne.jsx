@@ -27,7 +27,7 @@ const NavOne = () => {
 
 
                         <div key={i} className='w-auto  h-full'>
-                            <img className='object-cover  ' src={`img/logo/${e}`} alt="" />
+                            <img className='object-cover  ' src={`/img/logo/${e}`} alt="" />
                         </div>
 
 
