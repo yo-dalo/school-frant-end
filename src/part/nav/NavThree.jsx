@@ -2,10 +2,15 @@ import React from "react"
 import { motion } from "motion/react"
 import { index } from "../../pagesConfig/index"
 import { Link } from "react-router-dom"
+import { PhoneNav } from "./PhoneNav"
+import { useAuth } from "../../context/AuthContext";
 
 export const NavThree = () => {
+    const { SetPhoneNav } = useAuth();
     return (
         <div className="w-screen sticky top-0  z-[1000]   BT px-[4vw] h-12 bg-main border-b border-white/10">
+            <div onClick={() => SetPhoneNav(true)} className="div">hi</div>
+
             {index.map((item, idx) => (
                 <div
                     key={idx}

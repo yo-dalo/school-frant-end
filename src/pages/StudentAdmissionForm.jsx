@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import Yo from "../part/utils/Yo";
 const StudentAdmissionForm = () => {
   const [formData, setFormData] = useState({});
 
@@ -13,6 +13,17 @@ const StudentAdmissionForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData)
+
+    Yo.post("/api/client/admission", formData).then((res) => {
+
+      console.log(res.message)
+      setFormData({})
+
+
+    }).catch((e) => {
+      console.log(e)
+    })
+
 
 
   }
@@ -50,6 +61,7 @@ const StudentAdmissionForm = () => {
                 <input
                   id="id"
                   type="text"
+                  value={formData?.id}
                   onChange={(data) => handleChange("id", data)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
@@ -65,7 +77,8 @@ const StudentAdmissionForm = () => {
                 <input
                   id="name"
                   type="text"
-                  onChange={(data) => handleChange("name", data)}
+                  value={formData?.Name}
+                  onChange={(data) => handleChange("Name", data)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="Enter student's full name"
@@ -79,7 +92,8 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="father"
-                  onChange={(data) => handleChange("father", data)}
+                  value={formData?.Father_Name}
+                  onChange={(data) => handleChange("Father_Name", data)}
                   type="text"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
@@ -94,7 +108,8 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="mother"
-                  onChange={(data) => handleChange("mother", data)}
+                  value={formData?.Mother_Name}
+                  onChange={(data) => handleChange("Mother_Name", data)}
                   type="text"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
@@ -109,7 +124,8 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="email"
-                  onChange={(data) => handleChange("email", data)}
+                  value={formData?.Email}
+                  onChange={(data) => handleChange("Email", data)}
                   type="email"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
@@ -124,7 +140,8 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="phone"
-                  onChange={(data) => handleChange("phone", data)}
+                  value={formData?.Phone}
+                  onChange={(data) => handleChange("Phone", data)}
                   type="tel"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
@@ -139,7 +156,8 @@ const StudentAdmissionForm = () => {
                 </label>
                 <select
                   id="class"
-                  onChange={(data) => handleChange("class", data)}
+                  value={formData?.Class}
+                  onChange={(data) => handleChange("Class", data)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 >
@@ -168,7 +186,8 @@ const StudentAdmissionForm = () => {
                 <input
                   id="dob"
                   type="date"
-                  onChange={(data) => handleChange("dob", data)}
+                  value={formData?.DOB}
+                  onChange={(data) => handleChange("DOB", data)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 />
@@ -202,8 +221,9 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="admissionDate"
+                  value={formData?.Admission_Date}
                   type="date"
-                  onChange={(data) => handleChange("admissionDate", data)}
+                  onChange={(data) => handleChange("Admission_Date", data)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 />
@@ -217,7 +237,8 @@ const StudentAdmissionForm = () => {
                 <input
                   id="city"
                   type="text"
-                  onChange={(data) => handleChange("city", data)}
+                  value={formData.City}
+                  onChange={(data) => handleChange("City", data)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="e.g., Mumbai"
@@ -231,7 +252,8 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="state"
-                  onChange={(data) => handleChange("state", data)}
+                  value={formData?.State}
+                  onChange={(data) => handleChange("State", data)}
                   type="text"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
@@ -247,7 +269,8 @@ const StudentAdmissionForm = () => {
               </label>
               <textarea
                 id="moreInfo"
-                onChange={(data) => handleChange("moreInfo", data)}
+                value={formData?.More_Info}
+                onChange={(data) => handleChange("More_Info", data)}
                 rows="4"
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
                 placeholder="Any medical conditions, previous school details, special requirements, etc."

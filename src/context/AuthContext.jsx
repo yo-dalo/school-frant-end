@@ -11,6 +11,20 @@ export const AuthProvider = ({ children }) => {
   const go = useNavigate()
 
 
+  const [phoneNav, SetPhoneNav] = useState(false)
+
+
+
+
+
+
+
+
+
+
+
+
+
   const [resData, setResData] = useState([])
   useEffect(() => {
 
@@ -46,7 +60,7 @@ export const AuthProvider = ({ children }) => {
 
 
   return (
-    <AuthContext.Provider value={{ resData, resMsg, resNotification }}>
+    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav }}>
       {children}
     </AuthContext.Provider>
   );
