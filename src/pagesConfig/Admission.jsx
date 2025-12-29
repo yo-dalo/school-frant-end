@@ -1,7 +1,16 @@
-{
-    slug: "Admission", 
-    title: "Admission", 
+import StudentAdmissionForm from "../pages/StudentAdmissionForm"
+
+
+const Admission = {
+    slug: "Admission",
+    title: "Admission",
     sub: [
+
+        {
+            slug: "admission-Form",
+            title: "Admission Form",
+            content: <StudentAdmissionForm />
+        },
         {
             slug: "admission-process",
             title: "Admission Process",
@@ -54,3 +63,4 @@
         }
     ]
 }
+export default Admission;

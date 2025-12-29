@@ -2,7 +2,7 @@ import about from "./About"
 import Academics from "./Academics"
 import Achievements from "./Achievements"
 import test from "./test";
-
+import Admission from "./Admission"
 export const index = [
     { ...about },
     { ...test },
@@ -16,16 +16,7 @@ export const index = [
         ]
     },
 
-    {
-        slug: "Admission", title: "Admission", sub: [
-            {
-                slug: "admission-process",
-                title: "Admission Process",
-                content: `The admission process at YDC is designed to be transparent, efficient, and student-friendly, ensuring that every applicant receives fair consideration. We encourage prospective students and their parents to understand the values, curriculum, and learning environment offered at our school. The process begins with the submission of a completed application form, followed by an evaluation of academic records, previous achievements, and extracurricular involvement. Depending on the grade level, students may be invited for an interview or assessment to understand their aptitude, interests, and potential for growth. Our dedicated admission team is available to guide parents through each step, providing clear instructions and addressing any queries to ensure a smooth experience. We also offer orientation sessions and open days, where families can visit the campus, meet teachers, and experience the school environment firsthand. At YDC, we value diversity and inclusivity, welcoming students from different backgrounds and cultures. Our aim is to admit students who are eager to learn, participate actively, and contribute positively to the school community. By maintaining a structured and transparent admission process, we ensure that every student admitted has the opportunity to thrive academically, socially, and emotionally, preparing them for future success in their educational journey and beyond.`
-            }
-        ]
-    },
-
+    Admission,
     Achievements,
     Academics,
 
