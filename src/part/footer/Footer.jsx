@@ -2,16 +2,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#34495E] text-white py-16 px-10">
+    <footer className="bg-[#34495E] overflow-hidden text-white py-16 px-10">
       {/* Top Title */}
-      <div className="flex items-center justify-center gap-6 mb-16">
+      <div className="flex items-center   justify-center gap-6 mb-16">
         <div className="flex-1 h-px bg-white/50"></div>
         <h2 className="text-2xl font-light">our footer</h2>
         <div className="flex-1 h-px bg-white/50"></div>
       </div>
 
       {/* Main Content */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 phone:grid-cols-1 md:grid-cols-3 gap-16 max-w-7xl mx-auto">
         {/* Contact Us */}
         <div>
           <h3 className="text-3xl font-semibold mb-6">Contact Us</h3>
