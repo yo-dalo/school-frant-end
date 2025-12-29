@@ -1,3 +1,5 @@
+import { NoticeDetail } from "../pages/NoticeDetail";
+import { NoticeList } from "../pages/NoticeList";
 import StudentAdmissionForm from "../pages/StudentAdmissionForm"
 
 
@@ -10,6 +12,17 @@ const Admission = {
             slug: "admission-Form",
             title: "Admission Form",
             content: <StudentAdmissionForm />
+        },
+        {
+            slug: "notic",
+            title: "Admission Process",
+            content: <NoticeList />
+        },
+        {
+            slug: false,
+            title: "Admission Process",
+            link: "notice/:id",
+            content: <NoticeDetail />
         },
         {
             slug: "admission-process",
