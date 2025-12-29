@@ -12,7 +12,7 @@ import { useAuth } from "../../context/AuthContext";
 export const NavFour = () => {
 
     const { resData } = useAuth();
-  
+
 
 
 
@@ -54,7 +54,7 @@ export const NavFour = () => {
                                     duration: 0.2,
                                     ease: "easeOut",
                                 }}
-                                className="absolute top-6 -left-9 w-40 rounded-xl border border-white bg-white backdrop-blur-xl shadow-lg"
+                                className="absolute top-6 -left-9 w-40 overflow-scroll max-h-[75vh] rounded-xl border border-white bg-white backdrop-blur-xl shadow-lg"
                             >
                                 <div className="flex flex-col p-2">
 
