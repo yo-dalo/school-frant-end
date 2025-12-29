@@ -14,7 +14,7 @@ const Admission = {
             content: <StudentAdmissionForm />
         },
         {
-            slug: "notic",
+            slug: "notice",
             title: "Admission Process",
             content: <NoticeList />
         },
