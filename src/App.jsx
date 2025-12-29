@@ -88,10 +88,10 @@ function App() {
 
         {index.map((ex, i) => (
           ex.sub.map((e, i) => (
-        <Route path={`/${e?.link ? e?.link : e.slug}`} element={
+        <Route path={`/${e?.link ? e?.link : e?.slug}`} element={
           <PagesLayout title={e.title} content={e?.content}>
             <>
-              <PageTitle title={`${e.slug}`} />
+              <PageTitle title={`${e?.slug}`} />
             </>
           </PagesLayout>} />
         ))

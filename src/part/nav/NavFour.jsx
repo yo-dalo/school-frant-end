@@ -18,7 +18,7 @@ export const NavFour = () => {
 
     return (
         <div className="w-screen sticky top-12  z-[900]  gap-9 flex items-center px-[4vw] h-12 bg-main border-b border-white/10">
-            {resData.map((item, idx) => (
+            {resData?.map((item, idx) => (
                 <div
                     key={idx}
                     className="text-white  md:none phone:none text-[1.1vw] font-medium tracking-wide"
@@ -30,9 +30,9 @@ export const NavFour = () => {
                         whileHover="hover"
                         animate="rest"
                     >
-                        {item.Name}
+                        {item?.Name}
 
-                        {item.Name && item.Name.length > 0 && (
+                        {item?.Name && item?.Name.length > 0 && (
                             <motion.div
                                 variants={{
                                     rest: {
@@ -58,7 +58,7 @@ export const NavFour = () => {
                             >
                                 <div className="flex flex-col p-2">
 
-                                    {item.pages.map((subItem, subIdx) => (
+                                    {item?.pages.map((subItem, subIdx) => (
                                         <Link to={`/${subItem.Name.toLowerCase().replace(/\s+/g, "-")}`}
                                             key={subIdx}
                                             className="px-3 py-2  text-sm rounded-lg text-main hover:text-white hover:bg-main transition-all"

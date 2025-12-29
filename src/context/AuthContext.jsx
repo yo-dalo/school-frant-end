@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
 
     Yo.get("/api/client/pages").then((res) => {
-      setResData(res.data)
+      setResData(res?.data)
 
     })
   }, [])
@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
 
     Yo.get("/api/client/messages").then((res) => {
-      setResMsg(res.data.data)
+      setResMsg(res?.data?.data)
 
     })
   }, [])
@@ -39,8 +39,8 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
 
     Yo.get("/api/client/notification").then((res) => {
-      setResNotification(res.data.data)
-      console.log(res.data.data)
+      setResNotification(res?.data?.data)
+      console.log(res?.data?.data)
     })
   }, [])
 

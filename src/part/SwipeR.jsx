@@ -19,8 +19,8 @@ const SwipeR = () => {
     useEffect(() => {
 
         Yo.get("http://localhost:3000/api/client/poster").then((res) => {
-            setResData(res.data.data)
-            console.log(res.data.data)
+            setResData(res?.data?.data)
+            console.log(res?.data?.data)
         })
 
 
@@ -49,7 +49,7 @@ const SwipeR = () => {
 
                 {
 
-                    resData.map((e, i) => (
+                    resData?.map((e, i) => (
 
 
                         <SwiperSlide key={i} className='FULL'>

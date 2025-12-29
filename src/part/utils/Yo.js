@@ -6,7 +6,6 @@ class Yo {
       const response = await axios.get(url, config);
       return response.data;
     } catch (error) {
-      console.error("GET error:", error);
       return error;
     }
   }
@@ -16,7 +15,6 @@ class Yo {
       const response = await axios.post(url, data, config);
       return response.data;
     } catch (error) {
-      console.error("POST error:", error);
       return error;
     }
   }
