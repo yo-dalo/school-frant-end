@@ -9,7 +9,7 @@ export const NavThree = () => {
     const { SetPhoneNav } = useAuth();
     return (
         <div className="w-screen sticky top-0  z-[1000]   BT px-[4vw] h-12 bg-main border-b border-white/10">
-            <div onClick={() => SetPhoneNav(true)} className="div">hi</div>
+            <div onClick={() => SetPhoneNav(true)} className="div phone:block md:block none">hi</div>
 
             {index.map((item, idx) => (
                 <div

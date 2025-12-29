@@ -4,7 +4,7 @@ import { NavTwo } from './NavTwo'
 import { NavThree } from './NavThree'
 import { NavFour } from './NavFour'
 import { useAuth } from "../../context/AuthContext";
-import { PhoneNav } from './PhoneNav'
+import {PhoneNav} from './PhoneNav'
 
 
 export const Nav = () => {

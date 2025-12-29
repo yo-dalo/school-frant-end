@@ -6,7 +6,7 @@ const PageEleven = () => {
 
 
       <div className='w-screen BT md:gap-10 md:FC md:h-fit phone:h-screen phone:FC bg-main  h-[450px]'>
-        <div className="w-[1162px] bg-slate-300  md:w-full phone:w-full  phone:gap-4  pl-3 pr-2 center gap-9 h-full ">
+        <div className="w-[1162px] md:w-full phone:w-full  phone:gap-4  pl-3 pr-2 center gap-9 h-full ">
           <div className=" w-[20vw] md:w-[70vw] phone:w-[70vw] bg-mainOne h-[40vh] rounded-xl ">
 
           </div>

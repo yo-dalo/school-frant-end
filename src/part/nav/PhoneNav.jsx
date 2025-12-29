@@ -1,41 +1,91 @@
 import React from "react";
-import { motion } from "motion/react";
 import { useAuth } from "../../context/AuthContext";
 
-export const PhoneNav = () => {
-  const { phoneNav } = useAuth();
+export const PhoneNav = ({ pageCats = [] }) => {
+  const { phoneNav, SetPhoneNav } = useAuth();
 
   return (
-    <div
-      className={`fixed top-0 left-0 h-screen w-screen z-[1000000000] bg-black/60 backdrop-blur-sm ${
-        phoneNav || "hidden"
-      } md:hidden`}
-    >
-      <div className="h-full w-full bg-slate-900 pt-24 px-4 overflow-y-auto">
-        <div className="grid grid-cols-2 gap-4">
-          {[...Array(8)].map((_, i) => (
-            <div
-              key={i}
-              className="group rounded-xl bg-slate-800 border border-slate-700 overflow-hidden transition-all"
-            >
-              <motion.h3
-                whileTap={{ scale: 0.97 }}
-                className="px-4 py-3 text-white font-semibold bg-slate-700 group-hover:bg-main transition-all"
-              >
-                Menu
-              </motion.h3>
+    <div style={{ display: phoneNav ? "block" : "none" }} className="mainNav2 pointer-events-auto fixed z-[1000000] none  top-0 left-0 w-full h-screen overflow-y-auto bg-white shadow-2xl p-4">
+      <ul className="navSec BT gap-3 mb-3">
+        <a href="/" className=" w-full block">
+          <li className="py-3 px-4 rounded-xl bg-main text-white font-semibold text-lg">
+            Home
+          </li>
+        </a>
 
-              <ul className="px-4 py-2 text-sm text-slate-200 space-y-2 max-h-0 opacity-0 group-hover:max-h-60 group-hover:opacity-100 transition-all duration-300">
-                <li className="hover:text-main cursor-pointer">Item 1</li>
-                <li className="hover:text-main cursor-pointer">Item 2</li>
-                <li className="hover:text-main cursor-pointer">Item 3</li>
-                <li className="hover:text-main cursor-pointer">Item 4</li>
-                <li className="hover:text-main cursor-pointer">Item 5</li>
-              </ul>
-            </div>
-          ))}
-        </div>
+        <div onClick={() => { SetPhoneNav(false) }} className="cursor-pointer">55</div>
+
+      </ul>
+
+      {[
+        {
+          title: "About Us",
+          links: [
+            ["/about", "About School"],
+            ["/about-school", "About School M/garh"],
+            ["/chairman-message", "Chairman Message"],
+            ["/principal-message", "Principal Message"],
+            ["/management-committee", "Management Committee"],
+            ["/school-at-glance", "School at a Glance"],
+            ["/achievements", "Achievements"],
+          ],
+        },
+        {
+          title: "Academics",
+          links: [
+            ["/academics", "Academics"],
+            ["/curriculum", "Curriculum"],
+            ["/syllabus", "Syllabus"],
+            ["/teaching-methodology", "Teaching Methodology"],
+            ["/academic-calendar", "Academic Calendar"],
+            ["/exam-assessment", "Exam & Assessment"],
+            ["/exam-dates-results", "Exam Dates & Results"],
+            ["/exam-timetable-downloads", "Exam Timetable"],
+          ],
+        },
+      ].map((section, i) => (
+        <details className="mb-3 group" key={i}>
+          <summary className="list-none cursor-pointer py-3 px-4 bg-gray-100 rounded-xl font-semibold text-gray-800 flex justify-between items-center">
+            {section.title}
+            <span className="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+
+          <div className="mt-2 ml-3 space-y-2">
+            {section.links.map(([href, label], idx) => (
+              <a href={href} key={idx}>
+                <div className="py-2 px-4 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700">
+                  {label}
+                </div>
+              </a>
+            ))}
+          </div>
+        </details>
+      ))}
+
+      {pageCats.map((cat) => (
+        <details className="mb-3 group" key={cat.Id}>
+          <summary className="list-none cursor-pointer py-3 px-4 bg-gray-100 rounded-xl font-semibold text-gray-800 flex justify-between items-center">
+            {cat.Name}
+            <span className="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+
+          <div className="mt-2 ml-3 space-y-2">
+            {cat.pages?.map((page) => (
+              <a href={`/page/${page.Id}`} key={page.Id}>
+                <div className="py-2 px-4 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700">
+                  {page.Name}
+                </div>
+              </a>
+            ))}
+          </div>
+        </details>
+      ))}
+
+      <div className="mt-6 py-3 px-4 bg-main text-white rounded-xl font-semibold text-center">
+        © School Menu
       </div>
     </div>
   );
 };
+
+// export default PhoneNav;
