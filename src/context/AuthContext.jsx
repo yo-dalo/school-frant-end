@@ -16,15 +16,6 @@ export const AuthProvider = ({ children }) => {
 
 
 
-
-
-
-
-
-
-
-
-
   const [resData, setResData] = useState([])
   useEffect(() => {
 

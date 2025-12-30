@@ -1,8 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { notices } from '../pagesConfig/notices';
+import { useAuth } from "../context/AuthContext"
+
+
+
 
 export const NoticeList = () => {
+
+    const { resNotification } = useAuth();
+
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
             <div className="max-w-4xl mx-auto">
@@ -11,24 +19,20 @@ export const NoticeList = () => {
                 </h1>
 
                 <div className="space-y-6">
-                    {notices.map((notice) => (
+                    {resNotification.map((notice,i) => (
                         <Link
-                            key={notice.id}
-                            to={`/notice/${notice.id}`}
+                            key={i}
+                            to={`/notice/${notice?.Id}`}
                             className="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-indigo-100"
                         >
                             <div className="flex justify-between items-start">
                                 <div className="flex-1">
                                     <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-                                        {notice.title}
+                                        {notice?.Name}
                                     </h2>
-                                    <p className="text-gray-600 mb-3">{notice.shortDesc}</p>
+                                    <p className="text-gray-600 mb-3">{notice?.Title}</p>
                                     <span className="text-sm text-indigo-600 font-medium">
-                                        {new Date(notice.date).toLocaleDateString('en-GB', {
-                                            day: 'numeric',
-                                            month: 'long',
-                                            year: 'numeric'
-                                        })}
+                                      { notice?.Date}
                                     </span>
                                 </div>
                                 <svg

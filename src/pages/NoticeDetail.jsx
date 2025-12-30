@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { notices } from '../pagesConfig/notices';
+import { useAuth } from "../context/AuthContext"
+import Yo from '../part/utils/Yo';
+
+
+
+
+
 export const NoticeDetail = () => {
+    // const { resNotification } = useAuth();
+
+
     const { id } = useParams();
     const notice = notices.find((n) => n.id === parseInt(id));
+
+
+
+    const [resNotice, setResNotice] = useState({})
+    useEffect(() => {
+
+        Yo.get("/api/client/notification/" + id).then((res) => {
+            setResNotice(res?.data)
+            console.log(res?.data)
+        })
+    }, [])
+
+
+
+
+
+
+
+
+
 
     if (!notice) {
         return (
@@ -17,19 +47,16 @@ export const NoticeDetail = () => {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
             <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
                 <div className="bg-indigo-600 text-white py-8 px-10">
-                    <h1 className="text-3xl font-bold">{notice.title}</h1>
+                    <h1 className="text-3xl font-bold">{resNotice?.Name}</h1>
+                     <h3 className="text-1xl font-bold">{resNotice?.Title}</h3>
                     <p className="mt-3 text-indigo-100">
-                        Posted on: {new Date(notice.date).toLocaleDateString('en-GB', {
-                            day: 'numeric',
-                            month: 'long',
-                            year: 'numeric'
-                        })}
+                        Posted on: {resNotice?.Date}
                     </p>
                 </div>
 
                 <div className="p-10">
                     <div className="prose max-w-none text-gray-700 whitespace-pre-line leading-relaxed text-lg">
-                        {notice.fullContent}
+                        {resNotice?.Description}
                     </div>
 
                     <div className="mt-12 text-center">

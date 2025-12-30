@@ -69,7 +69,7 @@ const StudentAdmissionForm = () => {
         </div>
 
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 px-8 py-6">
+          <div className="bg-gradient-to-r from-main to-indigo-700 px-8 py-6">
             <h2 className="text-2xl font-semibold text-white">
               Personal & Academic Information
             </h2>
@@ -325,7 +325,7 @@ const StudentAdmissionForm = () => {
             <div className="flex justify-end pt-6">
               <button
                 type="submit"
-                className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold text-lg rounded-xl hover:from-blue-700 hover:to-indigo-800 transform hover:scale-105 transition duration-300 shadow-lg"
+                className="px-10 py-4 bg-gradient-to-r from-main to-indigo-700 text-white font-bold text-lg rounded-xl hover:from-blue-700 hover:to-indigo-800 transform hover:scale-105 transition duration-300 shadow-lg"
               >
                 Submit Admission Form
               </button>
