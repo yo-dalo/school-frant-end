@@ -9,7 +9,7 @@ import Yo from '../part/utils/Yo';
 
 
 export const NoticeDetail = () => {
-    // const { resNotification } = useAuth();
+    // const { resToper } = useAuth();
 
 
     const { id } = useParams();

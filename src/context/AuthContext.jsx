@@ -35,6 +35,14 @@ export const AuthProvider = ({ children }) => {
     })
   }, [])
 
+  const [resToper, setResToper] = useState([])
+  useEffect(() => {
+
+    Yo.get("/api/client/toper").then((res) => {
+      setResToper(res?.data?.data)
+
+    })
+  }, [])
 
 
 
@@ -51,7 +59,7 @@ export const AuthProvider = ({ children }) => {
 
 
   return (
-    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav }}>
+    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav, resToper }}>
       {children}
     </AuthContext.Provider>
   );
