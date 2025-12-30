@@ -1,33 +1,60 @@
 import React from "react";
 import { useState } from "react";
 import Yo from "../part/utils/Yo";
-const StudentAdmissionForm = () => {
-  const [formData, setFormData] = useState({});
 
+const StudentAdmissionForm = () => {
+  const [formData, setFormData] = useState({
+    id: "",
+    Name: "",
+    Father_Name: "",
+    Mother_Name: "",
+    Email: "",
+    Phone: "",
+    Class: "",
+    DOB: "",
+    Gender: "",
+    Admission_Date: "",
+    City: "",
+    State: "",
+    More_Info: "",
+  });
 
   const handleChange = (key, value) => {
-    setFormData(prev => ({ ...prev, [key]: value.target.value }));
+    // Handle event object from inputs/select or direct value from radio
+    const newValue = value && value.target ? value.target.value : value;
+    setFormData((prev) => ({ ...prev, [key]: newValue }));
   };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
+    console.log("Submitting form data:", formData);
 
-    Yo.post("/api/client/admission", formData).then((res) => {
+    try {
+      const res = await Yo.post("/api/client/admission", formData);
+      console.log(res.message);
+      alert(res.message || "Admission added successfully!");
 
-      console.log(res.message)
-      setFormData({})
-
-
-    }).catch((e) => {
-      console.log(e)
-    })
-
-
-
-  }
-
+      // Reset form to initial empty state after success
+      setFormData({
+        id: "",
+        Name: "",
+        Father_Name: "",
+        Mother_Name: "",
+        Email: "",
+        Phone: "",
+        Class: "",
+        DOB: "",
+        Gender: "",
+        Admission_Date: "",
+        City: "",
+        State: "",
+        More_Info: "",
+      });
+    } catch (e) {
+      console.error(e);
+      alert("Error submitting form");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
@@ -48,12 +75,9 @@ const StudentAdmissionForm = () => {
             </h2>
           </div>
 
-          <form className="p-8 md:p-10 space-y-8">
-            {/* Profile Photo Upload */}
-
-            {/* Form Grid */}
+          <form className="p-8 md:p-10 space-y-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* ID */}
+              {/* Student ID */}
               <div>
                 <label htmlFor="id" className="block text-sm font-semibold text-gray-700 mb-2">
                   Student ID <span className="text-red-500">*</span>
@@ -61,15 +85,15 @@ const StudentAdmissionForm = () => {
                 <input
                   id="id"
                   type="text"
-                  value={formData?.id}
-                  onChange={(data) => handleChange("id", data)}
+                  value={formData.id}
+                  onChange={(e) => handleChange("id", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="e.g., STU2025001"
                 />
               </div>
 
-              {/* Name */}
+              {/* Full Name */}
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                   Full Name <span className="text-red-500">*</span>
@@ -77,8 +101,8 @@ const StudentAdmissionForm = () => {
                 <input
                   id="name"
                   type="text"
-                  value={formData?.Name}
-                  onChange={(data) => handleChange("Name", data)}
+                  value={formData.Name}
+                  onChange={(e) => handleChange("Name", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="Enter student's full name"
@@ -92,9 +116,9 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="father"
-                  value={formData?.Father_Name}
-                  onChange={(data) => handleChange("Father_Name", data)}
                   type="text"
+                  value={formData.Father_Name}
+                  onChange={(e) => handleChange("Father_Name", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="Father's full name"
@@ -108,9 +132,9 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="mother"
-                  value={formData?.Mother_Name}
-                  onChange={(data) => handleChange("Mother_Name", data)}
                   type="text"
+                  value={formData.Mother_Name}
+                  onChange={(e) => handleChange("Mother_Name", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="Mother's full name"
@@ -124,9 +148,9 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="email"
-                  value={formData?.Email}
-                  onChange={(data) => handleChange("Email", data)}
                   type="email"
+                  value={formData.Email}
+                  onChange={(e) => handleChange("Email", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="student@example.com"
@@ -140,41 +164,39 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="phone"
-                  value={formData?.Phone}
-                  onChange={(data) => handleChange("Phone", data)}
                   type="tel"
+                  value={formData.Phone}
+                  onChange={(e) => handleChange("Phone", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="+91 98765 43210"
                 />
               </div>
 
-              {/* Class */}
+              {/* Class/Grade */}
               <div>
                 <label htmlFor="class" className="block text-sm font-semibold text-gray-700 mb-2">
                   Class/Grade <span className="text-red-500">*</span>
                 </label>
                 <select
                   id="class"
-                  value={formData?.Class}
-                  onChange={(data) => handleChange("Class", data)}
+                  value={formData.Class}
+                  onChange={(e) => handleChange("Class", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 >
-                  <option value="">Select Class</option>
-                  <option>Kindergarten</option>
-                  <option>Class 1</option>
-                  <option>Class 2</option>
-                  <option>Class 3</option>
-                  <option>Class 4</option>
-                  <option>Class 5</option>
-                  <option>Class 6</option>
-                  <option>Class 7</option>
-                  <option>Class 8</option>
-                  <option>Class 9</option>
-                  <option>Class 10</option>
-                  <option>Class 11</option>
-                  <option>Class 12</option>
+                  <option value="" disabled>
+                    Select a course
+                  </option>
+                  <option value="B.Tech">B.Tech</option>
+                  <option value="B.E.">B.E.</option>
+                  <option value="B.Sc">B.Sc</option>
+                  <option value="B.Com">B.Com</option>
+                  <option value="B.A.">B.A.</option>
+                  <option value="BBA">BBA</option>
+                  <option value="BCA">BCA</option>
+                  <option value="MBA">MBA</option>
+                  <option value="MCA">MCA</option>
                 </select>
               </div>
 
@@ -186,8 +208,8 @@ const StudentAdmissionForm = () => {
                 <input
                   id="dob"
                   type="date"
-                  value={formData?.DOB}
-                  onChange={(data) => handleChange("DOB", data)}
+                  value={formData.DOB}
+                  onChange={(e) => handleChange("DOB", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 />
@@ -198,18 +220,40 @@ const StudentAdmissionForm = () => {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   Gender <span className="text-red-500">*</span>
                 </label>
-                <div className="flex gap-6">
-                  <label className="flex items-center">
-                    <input type="radio" name="gender" value="male" required className="mr-2" />
-                    <span>Male</span>
+                <div className="flex gap-8">
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="Male"
+                      checked={formData.Gender === "Male"}
+                      onChange={() => handleChange("Gender", "Male")}
+                      required
+                      className="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="text-gray-700">Male</span>
                   </label>
-                  <label className="flex items-center">
-                    <input type="radio" name="gender" value="female" className="mr-2" />
-                    <span>Female</span>
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="Female"
+                      checked={formData.Gender === "Female"}
+                      onChange={() => handleChange("Gender", "Female")}
+                      className="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="text-gray-700">Female</span>
                   </label>
-                  <label className="flex items-center">
-                    <input type="radio" name="gender" value="other" className="mr-2" />
-                    <span>Other</span>
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="Other"
+                      checked={formData.Gender === "Other"}
+                      onChange={() => handleChange("Gender", "Other")}
+                      className="mr-2 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="text-gray-700">Other</span>
                   </label>
                 </div>
               </div>
@@ -221,9 +265,9 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="admissionDate"
-                  value={formData?.Admission_Date}
                   type="date"
-                  onChange={(data) => handleChange("Admission_Date", data)}
+                  value={formData.Admission_Date}
+                  onChange={(e) => handleChange("Admission_Date", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                 />
@@ -238,7 +282,7 @@ const StudentAdmissionForm = () => {
                   id="city"
                   type="text"
                   value={formData.City}
-                  onChange={(data) => handleChange("City", data)}
+                  onChange={(e) => handleChange("City", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="e.g., Mumbai"
@@ -252,9 +296,9 @@ const StudentAdmissionForm = () => {
                 </label>
                 <input
                   id="state"
-                  value={formData?.State}
-                  onChange={(data) => handleChange("State", data)}
                   type="text"
+                  value={formData.State}
+                  onChange={(e) => handleChange("State", e)}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   placeholder="e.g., Maharashtra"
@@ -269,8 +313,8 @@ const StudentAdmissionForm = () => {
               </label>
               <textarea
                 id="moreInfo"
-                value={formData?.More_Info}
-                onChange={(data) => handleChange("More_Info", data)}
+                value={formData.More_Info}
+                onChange={(e) => handleChange("More_Info", e)}
                 rows="4"
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
                 placeholder="Any medical conditions, previous school details, special requirements, etc."
@@ -281,7 +325,6 @@ const StudentAdmissionForm = () => {
             <div className="flex justify-end pt-6">
               <button
                 type="submit"
-                onClick={handleSubmit}
                 className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold text-lg rounded-xl hover:from-blue-700 hover:to-indigo-800 transform hover:scale-105 transition duration-300 shadow-lg"
               >
                 Submit Admission Form
