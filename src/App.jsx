@@ -10,7 +10,8 @@ import PageTitle from './part/utils/PageTitle';
 import { useLocation } from "react-router-dom";
 import Yo from "./part/utils/Yo";
 import { useAuth } from "./context/AuthContext";
-import  Noitc  from './pages/Notic';
+import Noitc from './pages/Notic';
+import AdmissionSuccess from './pages/AdmissionSuccess';
 
 function App() {
   const pathname = useLocation();
@@ -40,6 +41,15 @@ function App() {
           <Home />
         </>
         } />
+
+
+
+        <Route path="/AdmissionSuccess" element={<>
+          <PageTitle title={`ydc`} />
+          <AdmissionSuccess />
+        </>
+        } />
+
 
 
 
@@ -88,13 +98,13 @@ function App() {
 
         {index.map((ex, i) => (
           ex.sub.map((e, i) => (
-        <Route path={`/${e?.link ? e?.link : e?.slug}`} element={
-          <PagesLayout title={e.title} content={e?.content}>
-            <>
-              <PageTitle title={`${e?.slug}`} />
-            </>
-          </PagesLayout>} />
-        ))
+            <Route path={`/${e?.link ? e?.link : e?.slug}`} element={
+              <PagesLayout title={e.title} content={e?.content}>
+                <>
+                  <PageTitle title={`${e?.slug}`} />
+                </>
+              </PagesLayout>} />
+          ))
 
 
 

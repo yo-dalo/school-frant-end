@@ -28,7 +28,7 @@ const PageEleven = () => {
         {/* ==================== PART 1: Highlighted Topper ==================== */}
         <div className="w-[1162px] md:w-full phone:w-full phone:gap-4 pl-3 pr-2 flex gap-9 h-full items-center justify-center">
           {/* Photo Placeholder */}
-          <img src={`uploads/${selectedTopper?.Image}`} className="w-[20vw] md:w-[70vw] phone:w-[70vw] bg-mainOne h-[40vh] rounded-xl" />
+          <img src={`uploads/${selectedTopper?.Image}`} className="w-[20vw] object-cover md:w-[70vw] phone:w-[70vw] bg-mainOne h-[40vh] rounded-xl" />
 
           {/* Name, Father, Rank */}
           <div className="flex flex-col phone:px-2 justify-center phone:h-full py-10 phone:py-0 phone:items-start items-end">
@@ -58,7 +58,7 @@ const PageEleven = () => {
         </div>
 
         {/* ==================== PART 2: Scrollable Toppers List ==================== */}
-        <div className="flex justify-start overflow-x-auto h-full w-full px-4 pb-4">
+        <div className="flex justify-start   overflow-x-auto h-full w-full px-4 pb-4">
           {resToper?.map((e, i) => (
             <div
               key={i}
@@ -78,7 +78,7 @@ const PageEleven = () => {
               </h1>
 
               {/* Photo Placeholder */}
-              <img src={`uploads/${e?.Image}`} className="w-full h-[15vw] phone:h-[35vw] rounded-lg bg-mainOne" />
+              <img src={`uploads/${e?.Image}`} className="w-full object-cover h-[15vw] phone:h-[35vw] rounded-lg bg-mainOne" />
 
               {/* Name & Father (small text below) */}
               <div className="w-full text-center leading-5">

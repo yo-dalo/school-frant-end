@@ -50,6 +50,10 @@ const StudentAdmissionForm = () => {
         State: "",
         More_Info: "",
       });
+
+        // go to /AdmissionSuccess
+
+
     } catch (e) {
       console.error(e);
       alert("Error submitting form");
