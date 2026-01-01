@@ -57,8 +57,10 @@ const PageEleven = () => {
           </div>
         </div>
 
+
+
         {/* ==================== PART 2: Scrollable Toppers List ==================== */}
-        <div className="flex justify-start   overflow-x-auto h-full w-full px-4 pb-4">
+        <div className="flex justify-start  bg-[linear-gradient(114.52deg,_#6D93B9_17.83%,_#34495E_36.62%)]  overflow-x-auto h-full w-full px-4 pb-4">
           {resToper?.map((e, i) => (
             <div
               key={i}

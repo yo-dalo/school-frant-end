@@ -25,6 +25,136 @@ const Admission = {
             content: <NoticeDetail />
         },
         {
+            slug: "course-offered",
+            title: "Courses Offered",
+            content: (
+                <div className="space-y-6">
+                    <p className="text-2xl font-semibold text-main text-center">
+                        Our Courses and Programs
+                    </p>
+
+                    <p className="text-lg leading-relaxed text-main">
+                        Yaduvanshi School offers a wide range of undergraduate and
+                        postgraduate courses designed to provide comprehensive knowledge
+                        and practical skills across multiple disciplines. Each program is
+                        structured to ensure academic excellence, career readiness, and
+                        holistic development.
+                    </p>
+
+                    <div className="overflow-x-auto">
+                        <table className="min-w-full border border-gray-300 text-main">
+                            <thead className="bg-gray-100">
+                                <tr>
+                                    <th className="py-3 px-4 border-b border-gray-300 text-left">Course</th>
+                                    <th className="py-3 px-4 border-b border-gray-300 text-left">Duration</th>
+                                    <th className="py-3 px-4 border-b border-gray-300 text-left">Total Seats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">Bachelor of Arts (B.A.)</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">B.Com</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">B.Sc. Medical</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">80</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">B.Sc. Non-Medical</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">80</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">B.Sc Hons Physics</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">B.Sc Hons Chemistry</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">B.Sc Hons Maths</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">B.Sc Hons Zoology</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">3 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.Sc Physics</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.Sc Chemistry</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.Sc Maths</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.Sc Zoology</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">30</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.Sc Botany</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">30</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.Sc Geography</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">30</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.Com</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.A. English</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.A. Political Science</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50">
+                                    <td className="py-2 px-4 border-b border-gray-300">M.A. Sanskrit</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">2 Year</td>
+                                    <td className="py-2 px-4 border-b border-gray-300">40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p className="text-lg leading-relaxed text-main">
+                        Our diverse range of undergraduate and postgraduate courses ensures
+                        that students can pursue their interests while gaining the skills
+                        and knowledge needed for successful careers and future growth.
+                    </p>
+                </div>
+            ),
+        },
+
+        {
             slug: "admission-process",
             title: "Admission Process",
             content: `The admission process at YDC is designed to be transparent, efficient, and student-friendly. It begins with the submission of a completed application form, followed by an evaluation of academic records...`
