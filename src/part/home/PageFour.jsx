@@ -6,11 +6,9 @@ const PageFour = () => {
 
 
 
+        <div className="w-full overflow-hidden  min-h-screen bg-[linear-gradient(67.33deg,_#ECF0F1_67.01%,_#2C3E50_77.04%,_#2C3E50_82.99%)]  ">
 
-
-        <div className="w-full overflow-hidden  min-h-screen  bg-[linear-gradient(67.33deg,_#ECF0F1_67.96%,_#34495E_98.03%)] ">
-
-            <h1 className='main-text phone:text-7xl md:text-7xl text-center py-4 leading-[0.9]'>OUR JOURNEY HIGHLIGHTS</h1>
+            <h1 className='main-text  bg-[linear-gradient(81.95deg,_#000000_76.31%,_#FFFFFF_79.42%)] phone:text-7xl md:text-7xl text-center py-4 leading-[0.9]'>OUR JOURNEY HIGHLIGHTS</h1>
             <h3 className="text-center phone:text-2xl md:text-2xl phone:text-left phone:leading-7 phone:px-3 px-10 text-3xl pb-28 leading-8 font-semibold ">Our college provides quality education with a focus on holistic development. Dedicated faculty, modern facilities, and innovative programs create an engaging environment that nurtures learning, creativity, and growth for every student.</h3>
 
 

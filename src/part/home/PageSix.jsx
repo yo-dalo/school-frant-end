@@ -19,12 +19,12 @@ const PageSix = () => {
 
 
       <div className="BT h-[100%] px-12 phone:px-3 phone:FC py-9 gap-11 ">
-        <div className="w-full phone:grid-cols-1 phone:gap-16 phone:auto-rows-[30vw] grid grid-cols-5 auto-rows-[15vw] gap-1 h-full overflow-y-scroll place-items-center">
+        <div className="w-full phone:grid-cols-1 phone:pt-10 phone:gap-16 phone:auto-rows-[30vw] grid grid-cols-5 auto-rows-[15vw] gap-1 h-full overflow-y-scroll place-items-center">
 
 
           {resNotification?.map((e, i) => (
 
-            <Link to={`/notice/${e.Id}`} key={i} className=" py-9 phone:py-12 px-4 bg-white phone:w-full w-[15vw] relative  FC items-center phone:h-[35vw] h-[12vw]">
+            <Link to={`/notice/${e.Id}`} key={i} className=" py-9 phone:py-12 px-4 bg-white phone:w-full w-[15vw] relative   FC items-center phone:h-[35vw] h-[12vw]">
               <div className="w-[80%] overflow-hidden  h-10 phone:text-3xl md:text-xl md:leading-[2.8rem]  text-2xl -top-4 -rotate-3 absolute  text-center font-bold bg-black text-white">
                 {e?.Date}
               </div>

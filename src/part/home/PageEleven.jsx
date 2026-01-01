@@ -28,7 +28,7 @@ const PageEleven = () => {
         {/* ==================== PART 1: Highlighted Topper ==================== */}
         <div className="w-[1162px] md:w-full phone:w-full phone:gap-4 pl-3 pr-2 flex gap-9 h-full items-center justify-center">
           {/* Photo Placeholder */}
-          <img src={`uploads/${selectedTopper?.Image}`} className="w-[20vw] object-cover md:w-[70vw] phone:w-[70vw] bg-mainOne h-[40vh] rounded-xl" />
+          <img src={`uploads/${selectedTopper?.Image}`} className="w-[20vw] object-cover md:w-[70vw] phone:w-[45vw] bg-mainOne h-[45vw] rounded-xl" />
 
           {/* Name, Father, Rank */}
           <div className="flex flex-col phone:px-2 justify-center phone:h-full py-10 phone:py-0 phone:items-start items-end">

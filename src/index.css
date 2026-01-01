@@ -15,7 +15,7 @@
         letter-spacing: -0.08em;
 
         transition-duration: 2s;
-        background: linear-gradient(86.85deg, #ECF0F1 0.87%, #000000 95%);
+        /* background: linear-gradient(86.85deg, #ECF0F1 0.87%, #000000 95%); */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home';
 import { index } from './pagesConfig/index';
 import PagesLayout from './layout/PagesLayout';
@@ -36,11 +36,27 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/*" element={<>
+          <PageTitle title={`ydc`} />
+
+          <div className='FC w-full h-screen text-7xl '>
+            page not found
+            <Link className='w-4 block h-3 text-2xl bg-main' to={"/"}>
+              GO to home
+            </Link>
+          </div>
+        </>
+        } />
+
+
         <Route path="/" element={<>
           <PageTitle title={`ydc`} />
           <Home />
         </>
         } />
+
+
+
 
 
 
