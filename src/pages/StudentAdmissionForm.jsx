@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"
 import Yo from "../part/utils/Yo";
 
 const StudentAdmissionForm = () => {
+  const go = useNavigate()
   const [formData, setFormData] = useState({
     id: "",
     Name: "",
@@ -32,7 +34,7 @@ const StudentAdmissionForm = () => {
     try {
       const res = await Yo.post("/api/client/admission", formData);
       console.log(res.message);
-      alert(res.message || "Admission added successfully!");
+      // alert(res.message || "Admission added successfully!");
 
       // Reset form to initial empty state after success
       setFormData({
@@ -51,7 +53,7 @@ const StudentAdmissionForm = () => {
         More_Info: "",
       });
 
-        // go to /AdmissionSuccess
+      go("/AdmissionSuccess")
 
 
     } catch (e) {
