@@ -8,7 +8,7 @@ export const PhoneNav = ({ pageCats = [] }) => {
   const { phoneNav, SetPhoneNav } = useAuth();
 
   return (
-    <motion.div animate={{ x: phoneNav ? "0" : "100vw" }} transition={{ duration: 1, ease: "circOut" }} className="mainNav2 translate-x-screen   pointer-events-auto fixed z-[1000000]   top-0 left-0 w-full h-screen overflow-y-auto bg-white shadow-2xl p-4">
+    <motion.div animate={{ x: phoneNav ? "0" : "100vw" }} transition={{ duration: 1, ease: "circOut" }} className="mainNav2 translate-x-screen pointer-events-auto fixed z-[1000000]   top-0 left-0 w-full h-screen overflow-y-auto bg-white shadow-2xl p-4">
       <ul className="navSec BT gap-3 mb-3">
         <a href="/" className=" w-full block">
           <li className="py-3 px-4 rounded-xl bg-main text-white font-semibold text-lg">
@@ -52,7 +52,7 @@ export const PhoneNav = ({ pageCats = [] }) => {
 
         index.map((section, i) => (
           <details className="mb-3 group" key={i}>
-            <summary className="list-none cursor-pointer py-3 px-4 bg-gray-100 rounded-xl font-semibold text-gray-800 flex justify-between items-center">
+            <summary className="list-none cursor-pointer py-3 px-4  bg-gray-100 rounded-xl font-semibold text-gray-800 flex justify-between items-center">
               {section.slug}
               <span className="transition-transform group-open:rotate-180">⌄</span>
             </summary>
@@ -60,7 +60,7 @@ export const PhoneNav = ({ pageCats = [] }) => {
             <div className="mt-2 ml-3 space-y-2">
               {section?.sub.map((e, idx) => (
                 <Link to={e.link} key={idx}>
-                  <div className="py-2 px-4 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700">
+                  <div className="py-2 px-4 rounded-lg bg-gray-50 hover:bg-main hover:text-mainOne text-gray-700">
                     {e.slug}
                   </div>
                 </Link>
@@ -78,7 +78,7 @@ export const PhoneNav = ({ pageCats = [] }) => {
 
           <div className="mt-2 ml-3 space-y-2">
             {cat.pages?.map((page) => (
-              <a href={`/page/${page.Id}`} onClick={() => { SetPhoneNav(false) }} key={page.Id}>
+              <a href={`/page/${page.Id}`} key={page.Id}>
                 <div className="py-2 px-4 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700">
                   {page.Name}
                 </div>
