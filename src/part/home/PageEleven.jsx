@@ -26,7 +26,7 @@ const PageEleven = () => {
       <div className="w-screen flex md:flex-col md:gap-10 md:h-fit phone:h-screen phone:flex-col bg-main h-[500px]">
 
         {/* ==================== PART 1: Highlighted Topper ==================== */}
-        <div className="w-[1162px] md:w-full phone:w-full phone:gap-4 pl-3 pr-2 flex gap-9 h-full items-center justify-center">
+        <div className="w-[1162px]  shadow-2xl shadow-mainOne  md:w-full phone:w-full phone:gap-4 pl-3 pr-2 flex gap-9 h-full items-center justify-center">
           {/* Photo Placeholder */}
           <img src={`uploads/${selectedTopper?.Image}`} className="w-[20vw] object-cover md:w-[70vw] phone:w-[45vw] bg-mainOne h-[269px] rounded-xl" />
 
@@ -60,7 +60,7 @@ const PageEleven = () => {
 
 
         {/* ==================== PART 2: Scrollable Toppers List ==================== */}
-        <div className="flex justify-start  text-mainOne overflow-hidden bg-[linear-gradient(114.52deg,_#6D93B9_17.83%,_#34495E_36.62%)]  overflow-x-auto h-full w-full px-4 pb-4">
+        <div className="flex justify-start  text-mainOne overflow-hidden bg-main  overflow-x-auto h-full w-full px-4 pb-4">
           {resToper?.map((e, i) => (
             <div
               key={i}
