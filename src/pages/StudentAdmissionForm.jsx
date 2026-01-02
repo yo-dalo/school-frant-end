@@ -63,8 +63,8 @@ const StudentAdmissionForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br phone:px-0  from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl phone:max-w-8xl mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
             Student Admission Form
@@ -75,14 +75,14 @@ const StudentAdmissionForm = () => {
         </div>
 
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-          <div className="bg-gradient-to-r from-main to-indigo-700 px-8 py-6">
+          <div className="bg-gradient-to-r from-main to-indigo-700  px-8 py-6">
             <h2 className="text-2xl font-semibold text-white">
               Personal & Academic Information
             </h2>
           </div>
 
-          <form className="p-8 md:p-10 space-y-8" onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form className="p-8 md:p-10    space-y-8" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 phone:grid-cols-1  md:grid-cols-2 gap-6">
               {/* Student ID */}
               <div>
                 <label htmlFor="id" className="block text-sm font-semibold text-gray-700 mb-2">
