@@ -22,7 +22,7 @@ const PageEleven = () => {
   };
 
   return (
-    <div className="w-screen overflow-hidden h-fit flex justify-center items-center">
+    <div className="w-screen  text-mainOne overflow-hidden h-fit flex justify-center items-center">
       <div className="w-screen flex md:flex-col md:gap-10 md:h-fit phone:h-screen phone:flex-col bg-main h-[500px]">
 
         {/* ==================== PART 1: Highlighted Topper ==================== */}
@@ -60,7 +60,7 @@ const PageEleven = () => {
 
 
         {/* ==================== PART 2: Scrollable Toppers List ==================== */}
-        <div className="flex justify-start  overflow-hidden bg-[linear-gradient(114.52deg,_#6D93B9_17.83%,_#34495E_36.62%)]  overflow-x-auto h-full w-full px-4 pb-4">
+        <div className="flex justify-start  text-mainOne overflow-hidden bg-[linear-gradient(114.52deg,_#6D93B9_17.83%,_#34495E_36.62%)]  overflow-x-auto h-full w-full px-4 pb-4">
           {resToper?.map((e, i) => (
             <div
               key={i}
