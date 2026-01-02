@@ -37,7 +37,7 @@ export const NoticeDetail = () => {
 
     if (!notice) {
         return (
-            <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+            <div className="min-h-screen bg-mainOne flex items-center justify-center">
                 <p className="text-xl text-red-600">Notice not found!</p>
             </div>
         );
@@ -46,7 +46,7 @@ export const NoticeDetail = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
             <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <div className="bg-indigo-600 text-white py-8 px-10">
+                <div className="bg-main text-white py-8 px-10">
                     <h1 className="text-3xl font-bold">{resNotice?.Name}</h1>
                      <h3 className="text-1xl font-bold">{resNotice?.Title}</h3>
                     <p className="mt-3 text-indigo-100">
@@ -62,7 +62,7 @@ export const NoticeDetail = () => {
                     <div className="mt-12 text-center">
                         <Link
                             to="/"
-                            className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
+                            className="inline-block bg-main text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
                         >
                             ← Back to Notice Board
                         </Link>
