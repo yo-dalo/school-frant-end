@@ -25,7 +25,7 @@ const PageSix = () => {
           {resNotification?.map((e, i) => (
 
             <Link to={`/notice/${e.Id}`} key={i} className=" py-9 phone:py-12 px-4 bg-white phone:w-full w-[15vw] relative   FC items-center phone:h-[35vw] h-[12vw]">
-              <div className="w-[80%] overflow-hidden  h-10 phone:text-3xl md:text-xl md:leading-[2.8rem]  text-2xl -top-4 -rotate-3 absolute  text-center font-bold bg-black text-white">
+              <div style={{ background: Number(e?.Is_Important) ? "crimson" : "black" }} className="w-[80%] overflow-hidden   h-10 phone:text-3xl md:text-xl md:leading-[2.8rem]  text-2xl -top-4 -rotate-3 absolute  text-center font-bold bg-black text-white">
                 {e?.Date}
               </div>
 

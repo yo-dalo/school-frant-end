@@ -19,20 +19,21 @@ export const NoticeList = () => {
                 </h1>
 
                 <div className="space-y-6">
-                    {resNotification.map((notice,i) => (
+                    {resNotification.map((notice, i) => (
                         <Link
                             key={i}
                             to={`/notice/${notice?.Id}`}
+                            style={{ background: Number(notice?.Is_Important) ? "crimson" : "white" }}
                             className="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-indigo-100"
                         >
                             <div className="flex justify-between items-start">
                                 <div className="flex-1">
-                                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                                    <h2 style={{ color: Number(notice?.Is_Important) ? "white" : "gray-800" }} className="text-2xl font-semibold text-gray-800 mb-2">
                                         {notice?.Name}
                                     </h2>
-                                    <p className="text-gray-600 mb-3">{notice?.Title}</p>
-                                    <span className="text-sm text-indigo-600 font-medium">
-                                      { notice?.Date}
+                                    <p style={{ color: Number(notice?.Is_Important) ? "white" : "gray-600" }} className="text-gray-600 mb-3">{notice?.Title}</p>
+                                    <span style={{ color: Number(notice?.Is_Important) ? "indigo-50" : "indigo-500" }} className="text-sm text-indigo-600 font-medium">
+                                        {notice?.Date}
                                     </span>
                                 </div>
                                 <svg
