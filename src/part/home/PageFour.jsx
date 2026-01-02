@@ -17,7 +17,7 @@ const PageFour = () => {
                 {[1, 1, 1].map((e, i) => (
 
 
-                    <div key={i} className=" w-full phone:FC phone:justify-start BT relativpx-72e  phone:relative  gap-10 md:gap-5  phone:gap-5   border-t-4  border-black  md:min-h-[200px] phone:min-h-[150vw] h-40">
+                    <div key={i} className=" w-full phone:FC phone:justify-start BT relative  phone:relative  gap-10 md:gap-5  phone:gap-5   border-t-4  border-black  md:min-h-[200px] phone:min-h-[150vw] h-40">
                         <div className='-top-10 phone:-top-10 phone:left-0 md:-top-10 md:left-0 font-medium bg-black text-white px-9 pl-20 py-1 absolute'>STUDENT///</div>
 
                         <div className="w-1/2  phone:w-full center phone:h-fit h-full">
