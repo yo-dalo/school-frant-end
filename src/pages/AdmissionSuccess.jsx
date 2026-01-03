@@ -6,7 +6,8 @@ const AdmissionSuccess = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
         <div className="flex justify-center mb-4">
-          {/* <CheckCircle className="text-green-500 w-20 h-20" /> */}
+
+          <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="green" strokecurrentColor-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big-icon lucide-circle-check-big"><path d="M21.801 10A10 10 0 1 1 17 3.335" /><path d="m9 11 3 3L22 4" /></svg>
         </div>
 
         <h1 className="text-2xl font-bold text-gray-800 mb-2">
