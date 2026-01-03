@@ -18,7 +18,7 @@ const PageSeven = () => {
                 <div className="FC phone:gap-2">
                     <h1 className="text-7xl font-bold phone:text-3xl  phone:leading-6 leading-[0.9]">Vision & Mission</h1>
                     <div className="w-full  h-full bg-slate-800">
-                        <img className='FULL' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
+                        <img className='FULL object-cover' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
                     </div>
 
 
@@ -30,14 +30,14 @@ const PageSeven = () => {
                     </div>
 
                     <div className="w-full h-full ">
-                        <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
+                        <img  className='object-cover' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
                     </div>
 
 
 
                 </div>
                 <div className=" pt-1w6 phone:pt-6">
-                    <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
+                    <img  className='object-cover' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
                 </div>
 
 
