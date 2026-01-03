@@ -28,11 +28,11 @@ export const NoticeList = () => {
                         >
                             <div className="flex justify-between items-start">
                                 <div className="flex-1">
-                                    <h2 style={{ color: Number(notice?.Is_Important) ? "white" : "gray-800" }} className="text-2xl font-semibold text-gray-800 mb-2">
+                                    <h2 style={{ color: Number(notice?.Is_Important) ? "white" : "gray" }} className="text-2xl font-semibold text-gray-800 mb-2">
                                         {notice?.Name}
                                     </h2>
-                                    <p style={{ color: Number(notice?.Is_Important) ? "white" : "gray-600" }} className="text-gray-600 mb-3">{notice?.Title}</p>
-                                    <span style={{ color: Number(notice?.Is_Important) ? "indigo-50" : "indigo-500" }} className="text-sm text-indigo-600 font-medium">
+                                    <p style={{ color: Number(notice?.Is_Important) ? "white" : "gray" }} className="text-gray-600 mb-3">{notice?.Title}</p>
+                                    <span style={{ color: Number(notice?.Is_Important) ? "mainOne" : "indigo" }} className="text-sm text-indigo-600 font-medium">
                                         {notice?.Date}
                                     </span>
                                 </div>
