@@ -15,6 +15,7 @@ import Footer from '../part/footer/Footer'
 import Layout from '../layout/Layout'
 import PageTwelve from '../part/home/PageTwelve'
 import Reel from '../part/home/Reel'
+import ToperPage from '../part/home/Toper'
 
 const Home = () => {
     return (
@@ -28,6 +29,7 @@ const Home = () => {
             <PageSeven />
             <PageEight />
             <Reel />
+            <ToperPage />
             <PageNine />
             <PageTen />
             <PageEleven />

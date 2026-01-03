@@ -1,0 +1,101 @@
+import React from "react";
+
+const Toper = [
+    { position: 1, name: "Aarav Sharma", father: "Rajesh Sharma", image: "https://i.pravatar.cc/300?img=1" },
+    { position: 2, name: "Vihaan Patel", father: "Amit Patel", image: "https://i.pravatar.cc/300?img=2" },
+    { position: 3, name: "Arjun Singh", father: "Vikram Singh", image: "https://i.pravatar.cc/300?img=3" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
+    { position: 5, name: "Rohan Gupta", father: "Anil Gupta", image: "https://i.pravatar.cc/300?img=5" },
+];
+
+const colorMap = {
+    1: "bg-main",
+};
+
+const ToperPage = () => {
+    return (
+        <div className="p-6 bg-main min-h-screen">
+            <h1 className="text-3xl font-bold text-white text-center mb-8">
+                Topper
+            </h1>
+
+            <div className="flex flex-wrap items-center justify-center gap-6">
+                {Toper.map((s) => (
+                    <div
+                        key={s.position}
+                        className={`flex-shrink-0 relative overflow-hidden ${
+                            colorMap[s.position] || "bg-main"
+                        } rounded-sm max-w-xs  group`}
+                    >
+                        <svg
+                            className="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform duration-300"
+                            viewBox="0 0 375 283"
+                            fill="none"
+                            style={{ opacity: 0.1 }}
+                        >
+                            <rect
+                                x="159.52"
+                                y="175"
+                                width="152"
+                                height="152"
+                                rx="8"
+                                transform="rotate(-45 159.52 175)"
+                                fill="white"
+                            />
+                            <rect
+                                y="107.48"
+                                width="152"
+                                height="152"
+                                rx="8"
+                                transform="rotate(-45 0 107.48)"
+                                fill="white"
+                            />
+                        </svg>
+
+                        <div className="relative pt-0 px-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <div
+                                className="absolute bg-slate-900 w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                                style={{
+                                    background: "radial-gradient(black, transparent 60%)",
+                                    transform: "rotate3d(0,0,1,20deg) scale3d(1,0.6,1)",
+                                    opacity: 0.25,
+                                }}
+                            />
+                            <img
+                                className="relative w-full h-40 object-cover  border-white"
+                                src={s.image}
+                                alt={s.name}
+                            />
+                        </div>
+
+                        <div className="relative text-white px-6 pb-6 mt-6">
+                            <span className="block opacity-80 -mb-1 text-sm">
+                                Rank {s.position}
+                            </span>
+                            <div className="flex justify-between items-center">
+                                <div>
+                                    <span className="block font-semibold text-lg">{s.name}</span>
+                                    <span className="block text-xs opacity-80">
+                                        Father: {s.father}
+                                    </span>
+                                </div>
+                                <span className="block bg-white rounded-full text-slate-800 text-xs font-bold px-3 py-2 leading-none">
+                                    TOP {s.position}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default ToperPage;
