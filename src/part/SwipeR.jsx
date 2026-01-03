@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
+import { Link } from "react-router-dom";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -50,12 +50,11 @@ const SwipeR = () => {
                 {
 
                     resData?.map((e, i) => (
-
-
                         <SwiperSlide key={i} className='FULL'>
-                            <img className='object-contain  ' src={`uploads/${e?.Image}`} alt="" />
+                            <Link to={e.Url}>
+                                <img className='object-contain' src={`uploads/${e?.Image}`} alt={`uploads/${e?.Image}`} />
+                            </Link>
                         </SwiperSlide>
-
                     ))
 
 

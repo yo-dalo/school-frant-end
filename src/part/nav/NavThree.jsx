@@ -2,10 +2,15 @@ import React from "react"
 import { motion } from "motion/react"
 import { index } from "../../pagesConfig/index"
 import { Link } from "react-router-dom"
+import { PhoneNav } from "./PhoneNav"
+import { useAuth } from "../../context/AuthContext";
 
 export const NavThree = () => {
+    const { SetPhoneNav } = useAuth();
     return (
         <div className="w-screen sticky top-0  z-[1000]   BT px-[4vw] h-12 bg-main border-b border-white/10">
+            <div onClick={() => SetPhoneNav(true)} className="div phone:block md:block none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-list-icon lucide-list"><path d="M3 5h.01" /><path d="M3 12h.01" /><path d="M3 19h.01" /><path d="M8 5h13" /><path d="M8 12h13" /><path d="M8 19h13" /></svg></div>
+
             {index.map((item, idx) => (
                 <div
                     key={idx}
@@ -42,18 +47,22 @@ export const NavThree = () => {
                                     duration: 0.2,
                                     ease: "easeOut",
                                 }}
-                                className="absolute top-6 -left-9 w-40 rounded-xl border border-white bg-white backdrop-blur-xl shadow-lg"
+                                className="absolute top-6 -left-9 w-40  overflow-scroll max-h-[75vh] rounded-xl border border-white bg-white backdrop-blur-xl shadow-lg"
                             >
                                 <div className="flex flex-col p-2">
 
-                                    {item.sub.map((subItem, subIdx) => (
-                                        <Link to={`/${subItem?.link ? subItem?.link : subItem.slug}`}
-                                            key={subIdx}
-                                            className="px-3 py-2  text-sm rounded-lg text-main hover:text-white hover:bg-main transition-all"
-                                        >
-                                            {subItem.slug}
-                                        </Link>
-                                    ))}
+                                    {item.sub.map((subItem, subIdx) =>
+                                        subItem?.slug ? (
+                                            <Link
+                                                key={subIdx}
+                                                to={`/${subItem.link || subItem.slug}`}
+                                                className="px-3 py-2 text-sm rounded-lg text-main hover:text-white hover:bg-main transition-all"
+                                            >
+                                                {subItem.slug}
+                                            </Link>
+                                        ) : null
+                                    )}
+
                                 </div>
                             </motion.div>
                         )}

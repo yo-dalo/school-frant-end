@@ -14,13 +14,29 @@
         font-size: 123.378px;
         letter-spacing: -0.08em;
 
-        background: linear-gradient(86.85deg, #ECF0F1 0.87%, #000000 95%);
+        transition-duration: 2s;
+        /* background: linear-gradient(86.85deg, #ECF0F1 0.87%, #000000 95%); */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
     }
 
+    /* .main-text:hover {
+
+        /* transform:rotate(10deg); */
+        /* white-space: none; */
+        /* word-wrap: none;
+        font-weight: 800; */
+        /* font-size: 200.378px; */
+        /* letter-spacing: 0.18em; */
+
+        /* background: linear-gradient(86.85deg, #a6b8bc 0.87%, #4a2727 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    } */ 
 
     .none {
         display: none;
@@ -102,7 +118,7 @@
     }
 
 
-     .FC-S {
+    .FC-S {
         @apply flex-col flex justify-start items-start
     }
 

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { Link } from "react-router-dom"
 const PageThree = () => {
     return (
-        <div className="w-screen phone:py-8  md:py-8 bg-mainOne  phone:grid-cols-1 overflow-hidden grid grid-cols-3 px-20 phone:px-0  md:gap-5 md:px-2 gap-14 min-h-screen">
+        <div className="w-screen phone:py-8  bg-[linear-gradient(230.89deg,_#ECF0F1_69.63%,_#34495E_91.52%)] md:py-8 bg-mainOne  phone:grid-cols-1 overflow-hidden grid grid-cols-3 px-20 phone:px-0  md:gap-5 md:px-2 gap-14 min-h-screen">
 
             <div className="  flex flex-col gap-3">
                 <div className="w-full phone:h-96  h-2/3 bg-red-700">
@@ -28,7 +28,7 @@ const PageThree = () => {
 
             <div className=" flex flex-col gap-3">
                 <div className="w-full h-1/3 phone:h-96  bg-red-700">
-                    <img  src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" className="FULL object-cover" />
+                    <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" className="FULL object-cover" />
                 </div>
                 <h1 className=" text-xl font-medium  phone:text-5xl">Why Choose Ydc</h1>
 
@@ -49,7 +49,7 @@ const PageThree = () => {
 
 
 
-                <button className='w-24 phone:mx-3 h-10 rounded-md  phone:w-1/2 bg-red-500'>Apply Now </button>
+                <Link to={'/admission-Form'} className='w-24 center hover:bg-main hover:text-mainOne phone:mx-3 h-10 rounded-md  phone:w-1/2 bg-red-500'>Apply Now </Link>
             </div>
 
         </div>

@@ -1,12 +1,34 @@
-{
-    slug: "Contact US", 
-    title: "Contact US", 
+const contact = {
+    slug: "Contact US",
+    title: "Contact US",
     sub: [
+        {
+            slug: "contact-us",
+            title: "Contact Us",
+            content: (
+                <div className="space-y-4 text-main">
+                    <p className="text-2xl font-semibold text-center">Yaduvanshi Degree College</p>
+
+                    <div className="text-lg leading-relaxed text-center">
+                        <p>Bucholi Road, Mahendergarh</p>
+                        <p>District - Mahendergarh</p>
+                        <p>PIN - 123029</p>
+                    </div>
+
+                    <div className="text-lg leading-relaxed text-center">
+                        <p><span className="font-semibold">Mobile No.:</span> 8607062323, 8607062424, 9729429766</p>
+                        <p><span className="font-semibold">Email:</span> ydcmgh@gmail.com</p>
+                    </div>
+                </div>
+            ),
+        },
+
         {
             slug: "contact-details",
             title: "Contact Details",
             content: `At YDC, we value communication and encourage students, parents, and community members to reach out...`
         },
+
         {
             slug: "general-inquiry",
             title: "General Inquiries",
@@ -59,3 +81,6 @@
         }
     ]
 }
+
+
+export default contact;

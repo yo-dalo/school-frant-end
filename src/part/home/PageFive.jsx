@@ -105,7 +105,7 @@ const PageFive = () => {
 
             <div className=" px-72 phone:px-0 md:px-0   w-full">
 
-                <h1 className='main-text phone:text-8xl md:text-7xl md:leading-[0.8] leading-[0.9] text-center '>NEWS & EVENTS</h1>
+                <h1 className='main-text phone:text-8xl md:text-7xl md:leading-[0.8]  leading-[0.9] text-center '>NEWS & EVENTS</h1>
 
             </div>
 

@@ -2,30 +2,16 @@ import about from "./About"
 import Academics from "./Academics"
 import Achievements from "./Achievements"
 import test from "./test";
+import Admission from "./Admission"
+import whyOnlyYdc from "./WhyOnlyYDC";
+import contact from "./ContactUS";
 
 export const index = [
     { ...about },
     { ...test },
-    {
-        slug: "Why Only YDC", title: "Why Only YDC", sub: [
-            {
-                slug: "why-ydc",
-                title: "Why Choose YDC",
-                content: `Choosing YDC as the educational institution for your child offers numerous advantages that foster both personal and academic growth. At YDC, we prioritize a student-centered approach that emphasizes the development of critical thinking, problem-solving skills, and creativity. Our dedicated teachers are highly qualified and committed to ensuring that each child receives individual attention and guidance to achieve their full potential. The curriculum at YDC is designed to blend academic excellence with practical knowledge, providing students with opportunities to explore various subjects deeply while encouraging curiosity and innovation. We focus not only on traditional subjects but also on extracurricular activities, including sports, arts, music, and cultural events, which allow students to express themselves, develop leadership qualities, and cultivate teamwork. Our school infrastructure includes state-of-the-art classrooms, laboratories, libraries, and technology-enabled learning spaces that enhance the overall learning experience. Safety, discipline, and moral values are at the core of our philosophy, ensuring a nurturing environment where students can grow confidently. Furthermore, our school encourages community engagement and social responsibility, helping students become empathetic, socially aware, and responsible citizens. By choosing YDC, parents can trust that their children will receive a well-rounded education that prepares them for academic achievements, career success, and meaningful contributions to society.`
-            }
-        ]
-    },
+    whyOnlyYdc,
 
-    {
-        slug: "Admission", title: "Admission", sub: [
-            {
-                slug: "admission-process",
-                title: "Admission Process",
-                content: `The admission process at YDC is designed to be transparent, efficient, and student-friendly, ensuring that every applicant receives fair consideration. We encourage prospective students and their parents to understand the values, curriculum, and learning environment offered at our school. The process begins with the submission of a completed application form, followed by an evaluation of academic records, previous achievements, and extracurricular involvement. Depending on the grade level, students may be invited for an interview or assessment to understand their aptitude, interests, and potential for growth. Our dedicated admission team is available to guide parents through each step, providing clear instructions and addressing any queries to ensure a smooth experience. We also offer orientation sessions and open days, where families can visit the campus, meet teachers, and experience the school environment firsthand. At YDC, we value diversity and inclusivity, welcoming students from different backgrounds and cultures. Our aim is to admit students who are eager to learn, participate actively, and contribute positively to the school community. By maintaining a structured and transparent admission process, we ensure that every student admitted has the opportunity to thrive academically, socially, and emotionally, preparing them for future success in their educational journey and beyond.`
-            }
-        ]
-    },
-
+    Admission,
     Achievements,
     Academics,
 
@@ -93,13 +79,6 @@ export const index = [
         ]
     },
 
-    {
-        slug: "Contact US", title: "Contact US", sub: [
-            {
-                slug: "contact-details",
-                title: "Contact Details",
-                content: `At YDC, we value communication and encourage students, parents, and community members to reach out to us with any inquiries, feedback, or support needs. Our administrative office is equipped to provide assistance regarding admissions, academic programs, extracurricular activities, and school policies. Contact can be made via email, phone, or by visiting our campus during office hours. We also maintain an online presence through our official website and social media channels, allowing for convenient access to updates, announcements, and resources. Our staff is dedicated to responding promptly and providing accurate information to ensure a smooth and transparent communication process. For specific departments, including admissions, academics, and student support, designated contact points are available to address queries efficiently. Additionally, we welcome suggestions and feedback from parents and students to continually improve our services and programs. By fostering open communication, YDC aims to build strong relationships with families, support student success, and maintain a collaborative and transparent educational environment where all stakeholders feel valued, informed, and engaged in the growth and development of our students.`
-            }
-        ]
-    }
+    contact,
+
 ];

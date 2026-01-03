@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home';
 import { index } from './pagesConfig/index';
 import PagesLayout from './layout/PagesLayout';
@@ -10,7 +10,8 @@ import PageTitle from './part/utils/PageTitle';
 import { useLocation } from "react-router-dom";
 import Yo from "./part/utils/Yo";
 import { useAuth } from "./context/AuthContext";
-import  Noitc  from './pages/Notic';
+import Noitc from './pages/Notic';
+import AdmissionSuccess from './pages/AdmissionSuccess';
 
 function App() {
   const pathname = useLocation();
@@ -35,11 +36,36 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/*" element={<>
+          <PageTitle title={`ydc`} />
+
+          <div className='FC w-full h-screen text-7xl '>
+            page not found
+            <Link className='w-4 block h-3 text-2xl bg-main' to={"/"}>
+              GO to home
+            </Link>
+          </div>
+        </>
+        } />
+
+
         <Route path="/" element={<>
           <PageTitle title={`ydc`} />
           <Home />
         </>
         } />
+
+
+
+
+
+
+        <Route path="/AdmissionSuccess" element={<>
+          <PageTitle title={`ydc`} />
+          <AdmissionSuccess />
+        </>
+        } />
+
 
 
 
@@ -88,13 +114,13 @@ function App() {
 
         {index.map((ex, i) => (
           ex.sub.map((e, i) => (
-        <Route path={`/${e?.link ? e?.link : e?.slug}`} element={
-          <PagesLayout title={e.title} content={e?.content}>
-            <>
-              <PageTitle title={`${e?.slug}`} />
-            </>
-          </PagesLayout>} />
-        ))
+            <Route path={`/${e?.link ? e?.link : e?.slug}`} element={
+              <PagesLayout title={e.title} content={e?.content}>
+                <>
+                  <PageTitle title={`${e?.slug}`} />
+                </>
+              </PagesLayout>} />
+          ))
 
 
 
