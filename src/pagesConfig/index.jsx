@@ -5,6 +5,7 @@ import test from "./test";
 import Admission from "./Admission"
 import whyOnlyYdc from "./WhyOnlyYDC";
 import contact from "./ContactUS";
+import G from "./Gallery";
 
 export const index = [
     { ...about },
@@ -14,7 +15,7 @@ export const index = [
     Admission,
     Achievements,
     Academics,
-
+    G,
 
 
 
