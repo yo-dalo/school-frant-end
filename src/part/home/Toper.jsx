@@ -21,12 +21,12 @@ const colorMap = {
 
 const ToperPage = () => {
     return (
-        <div className="p-6 bg-main min-h-screen">
+        <div className="p-6 bg-main phone:min-h-fit min-h-screen">
             <h1 className="text-3xl font-bold text-white text-center mb-8">
                 Topper
             </h1>
 
-            <div className="flex flex-wrap items-center justify-center gap-6">
+            <div className="flex flex-row  flex-wrap phone:flex-nowrap phone:overflow-scroll  items-center justify-center gap-6">
                 {Toper.map((s) => (
                     <div
                         key={s.position}
