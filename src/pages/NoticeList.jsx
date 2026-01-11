@@ -24,7 +24,7 @@ export const NoticeList = () => {
                             key={i}
                             to={`/notice/${notice?.Id}`}
                             style={{ background: Number(notice?.Is_Important) ? "crimson" : "white" }}
-                            className="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-indigo-100"
+                            className="block bg-white  shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-indigo-100"
                         >
                             <div className="flex justify-between items-start">
                                 <div className="flex-1">

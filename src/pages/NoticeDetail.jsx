@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { notices } from '../pagesConfig/notices';
 import { useAuth } from "../context/AuthContext"
 import Yo from '../part/utils/Yo';
 
@@ -13,7 +12,7 @@ export const NoticeDetail = () => {
 
 
     const { id } = useParams();
-    const notice = notices.find((n) => n.id === parseInt(id));
+
 
 
 
@@ -35,7 +34,7 @@ export const NoticeDetail = () => {
 
 
 
-    if (!notice) {
+    if (!setResNotice) {
         return (
             <div className="min-h-screen bg-mainOne flex items-center justify-center">
                 <p className="text-xl text-red-600">Notice not found!</p>
@@ -45,7 +44,7 @@ export const NoticeDetail = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
-            <div  className="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div className="max-w-3xl mx-auto bg-white  shadow-2xl overflow-hidden">
                 <div style={{ background: Number(resNotice?.Is_Important) ? "crimson" : "main" }} className="bg-main text-white py-8 px-10">
                     <h1 className="text-3xl font-bold">{resNotice?.Name}</h1>
                     <h3 className="text-1xl font-bold">{resNotice?.Title}</h3>
@@ -62,7 +61,7 @@ export const NoticeDetail = () => {
                     <div className="mt-12 text-center">
                         <Link
                             to="/"
-                            className="inline-block bg-main text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
+                            className="inline-block bg-main text-white px-8 py-3 font-medium hover:bg-indigo-700 transition-colors"
                         >
                             ← Back to Notice Board
                         </Link>

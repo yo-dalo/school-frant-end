@@ -12,6 +12,7 @@ import Yo from "./part/utils/Yo";
 import { useAuth } from "./context/AuthContext";
 import Noitc from './pages/Notic';
 import AdmissionSuccess from './pages/AdmissionSuccess';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   const pathname = useLocation();
@@ -39,12 +40,7 @@ function App() {
         <Route path="/*" element={<>
           <PageTitle title={`ydc`} />
 
-          <div className='FC w-full h-screen text-7xl '>
-            page not found
-            <Link className='w-4 block h-3 text-2xl bg-main' to={"/"}>
-              GO to home
-            </Link>
-          </div>
+          <PageNotFound />
         </>
         } />
 
