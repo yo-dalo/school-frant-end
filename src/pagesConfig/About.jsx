@@ -2,6 +2,7 @@ const about = {
     slug: "About",
     title: "About Us",
     sub: [
+        
         {
             link: "about-school",
             slug: "about-school",

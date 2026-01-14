@@ -16,11 +16,13 @@ import { useState } from 'react';
 const SwipeR = () => {
 
     const [resData, setResData] = useState([])
+    const [damoData, setDamoData] = useState([{ Image: 'img/swiper/swiper1.jpeg' }, { Image: 'img/swiper/swiper2.jpeg' }])
+
     useEffect(() => {
 
         Yo.get("http://localhost:3000/api/client/poster").then((res) => {
-            setResData(res?.data?.data)
-            console.log(res?.data?.data)
+            setResData(res?.data?.data || [])
+
         })
 
 
@@ -49,15 +51,20 @@ const SwipeR = () => {
 
                 {
 
-                    resData?.map((e, i) => (
-                        <SwiperSlide key={i} className='FULL'>
-                            <Link to={e.Url}>
-                                <img className='object-contain' src={`uploads/${e?.Image}`} alt={`uploads/${e?.Image}`} />
-                            </Link>
-                        </SwiperSlide>
-                    ))
-
-
+                    resData.length ?
+                        resData?.map((e, i) => (
+                            <SwiperSlide key={i} className='FULL'>
+                                <Link to={e.Url}>
+                                    <img className='object-contain' src={`uploads/${e?.Image}`} alt={`uploads/${e?.Image}`} />
+                                </Link>
+                            </SwiperSlide>
+                        )) : damoData?.map((e, i) => (
+                            <SwiperSlide key={i} className='FULL'>
+                                <Link to={e.Url}>
+                                    <img className='object-contain' src={`${e?.Image}`} alt={`uploads/${e?.Image}`} />
+                                </Link>
+                            </SwiperSlide>
+                        ))
                 }
 
 
