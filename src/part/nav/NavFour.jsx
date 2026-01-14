@@ -17,7 +17,7 @@ export const NavFour = () => {
 
 
     return (
-        <div className="w-screen sticky top-12  z-[900]  gap-9 flex items-center px-[4vw] h-12 bg-main border-b border-white/10">
+        <div className="w-screen sticky top-12  phone:none  z-[900]  gap-9 flex items-center px-[4vw] h-12 bg-main border-b border-white/10">
             {resData?.map((item, idx) => (
                 <div
                     key={idx}
