@@ -3,44 +3,13 @@ import { Link } from 'react-router-dom'
 
 export const NavTwo = () => {
   return (
-     <div className='w-screen BT phone:px-5 px-16 phone:h-12 h-20 bg-white '>
-                
-<Link to={"/"} className="h-full w-auto">
+    <div className='w-screen BT phone:px-5 px-16 phone:h-12 h-20 bg-white '>
 
-<img src="/img/logo/logo.png" alt="" />
+      <Link to={"/"} className="h-full w-auto">
 
-</Link>
+        <img src="/img/logo/logo.png" alt="" />
 
-
-
-
-
-
-
-
-
-
-<div className="h-full center">
-
-<div className="h-full w-auto">
-
-<img src="/img/x/ad.png" alt="" />
-
-</div>
-
-
-
-
-<div className="h-full py-3 w-auto">
-
-<img src="/img/x/n1.png" alt="" />
-
-</div>
-
-
-
-
-</div>
+      </Link>
 
 
 
@@ -51,6 +20,37 @@ export const NavTwo = () => {
 
 
 
-            </div>
+      <div className="h-full center">
+
+        <Link to={"/admission-Form"} className="h-full w-auto">
+
+          <img src="/img/x/ad.png" alt="" />
+
+        </Link>
+
+
+
+
+        <div className="h-full py-3 w-auto">
+
+          <img src="/img/x/n1.png" alt="" />
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
   )
 }
