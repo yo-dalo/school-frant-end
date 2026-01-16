@@ -9,7 +9,7 @@ const PageThree = () => {
                     <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" className="FULL object-cover" />
                 </div>
 
-                <h1 className="text-6xl md:text-4xl leading-[3rem]">BUILDING BRIGHTER FUTURES</h1>
+                <h1 className="text-6xl md:text-4xl  leading-[3rem]">BUILDING BRIGHTER FUTURES</h1>
 
                 <h6 className='w-1/2 phone:font-semibold leading-tight'>Admissions Open 2026-27</h6>
 

@@ -16,7 +16,13 @@ const Reel = () => {
   };
 
   return (
-    <div className="w-screen bg-main h-[80vh] py-12 px-10">
+    <div className="w-screen bg-main py-7  px-10">
+       <div className="center py-8  px-8 gap-10">
+        <hr className='w-full border-mainOne' />
+        <div className="whitespace-nowrap  text-5xl">Reels</div>
+        <hr className='w-full  border-mainOne' />
+
+      </div> 
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -33,9 +39,9 @@ const Reel = () => {
         modules={[EffectCoverflow, Pagination]}
         onSlideChange={handleSlideChange}
         navigation={true}
-        className="FULL"
+        className="FULL min-h-[10vw] h-[70vh]"
       >
-        <SwiperSlide className="max-w-[400px] overflow-hidden rounded-2xl max-h-full">
+        <SwiperSlide className="max-w-[400px]  overflow-hidden rounded-2xl max-h-full">
           <video
             ref={(el) => (videoRefs.current[0] = el)}
             className="FULL object-cover"

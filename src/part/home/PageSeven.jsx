@@ -7,7 +7,7 @@ const PageSeven = () => {
 
             <div className="center  px-8 gap-10">
                 <hr className='w-full' />
-                <div className="whitespace-nowrap text-5xl">our moniters</div>
+                <div className="whitespace-nowrap none text-5xl">our moniters</div>
                 <hr className='w-full' />
 
             </div>
@@ -30,7 +30,7 @@ const PageSeven = () => {
                     </div>
 
                     <div className="w-full h-full ">
-                        <img  className='object-cover' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
+                        <img  className='object-cover' src="img/image/a12.jpeg" alt="" />
                     </div>
 
 

@@ -3,14 +3,14 @@ import { motion } from "framer-motion"
 
 const PageNine = () => {
   return (
-    <div className="w-full phone:h-[70vh] overflow-hidden h-[700px] py-12 gap-5 grid grid-rows-2 bg-main">
-      
+    <div className="w-full phone:h-[70vh] overflow-hidden h-[1000px] py-12 gap-5 grid grid-rows-3 bg-main">
+
       {/* Row 1 : left */}
       <div className="overflow-hidden">
         <motion.div
           className="flex gap-4 w-max"
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ 
+          transition={{
             repeat: Infinity,
             repeatType: "loop",
             ease: "linear",
@@ -19,9 +19,9 @@ const PageNine = () => {
         >
           {[...Array(2)].map((_, i) => (
             <React.Fragment key={i}>
-              <img className="h-full object-fill" src="https://i.pinimg.com/736x/a0/d8/82/a0d882b093ecc4da0eecd34258b63423.jpg" />
-              <img className="h-full object-fill" src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" />
-              <img className="h-full object-fill " src="https://i.pinimg.com/736x/f3/f1/45/f3f145d5aa2f40f8c620900c60139c07.jpg" />
+              <img className="h-full object-fill" src="img/image/a12.jpeg" />
+              <img className="h-full object-fill" src="img/image/a13.jpeg" />
+              <img className="h-full object-fill " src="img/image/a15.jpeg" />
             </React.Fragment>
           ))}
         </motion.div>
@@ -41,13 +41,37 @@ const PageNine = () => {
         >
           {[...Array(2)].map((_, i) => (
             <React.Fragment key={i}>
-              <img className="h-full object-fill" src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" />
-              <img className="h-full object-fill" src="https://i.pinimg.com/736x/a0/d8/82/a0d882b093ecc4da0eecd34258b63423.jpg" />
-              <img className="h-full object-fill" src="https://i.pinimg.com/736x/f3/f1/45/f3f145d5aa2f40f8c620900c60139c07.jpg" />
+              <img className="h-full object-fill" src="img/image/a6.jpeg" />
+              <img className="h-full object-fill" src="img/image/a11.jpeg" />
+              <img className="h-full object-fill" src="img/image/a17.jpeg" />
             </React.Fragment>
           ))}
+
         </motion.div>
       </div>
+
+      <div className="overflow-hidden">
+        <motion.div
+          className="flex gap-4 w-max"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "linear",
+            duration: 20,
+          }}
+        >
+          {[...Array(2)].map((_, i) => (
+            <React.Fragment key={i}>
+              <img className="h-full object-fill" src="img/image/a6.jpeg" />
+              <img className="h-full object-fill" src="img/image/a11.jpeg" />
+              <img className="h-full object-fill" src="img/image/a17.jpeg" />
+            </React.Fragment>
+          ))}
+
+        </motion.div>
+      </div>
+
 
     </div>
   )

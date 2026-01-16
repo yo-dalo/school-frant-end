@@ -9,7 +9,7 @@ const PageSix = () => {
 
       <div className="center phone:px-0 phone:gap-1    px-8 gap-10">
         <hr className='w-full ' />
-        <div className="whitespace-nowrap text-5xl">our moniters</div>
+        <div className="whitespace-nowrap text-5xl">Notices</div>
         <hr className='w-full' />
 
       </div>
