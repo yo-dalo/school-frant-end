@@ -5,7 +5,7 @@ import PageTwo from '../part/home/PageTwo'
 import PageThree from '../part/home/PageThree'
 import PageFour from '../part/home/PageFour'
 import Moniter from '../part/home/Moniter'
-import PageSix from '../part/home/PageSix'
+import Notification from '../part/home/Notification'
 import PageSeven from '../part/home/PageSeven'
 import PageEight from '../part/home/PageEight'
 import PageNine from '../part/home/PageNine'
@@ -25,7 +25,7 @@ const Home = () => {
             <PageThree />
             <PageFour />
             <Moniter />
-            <PageSix />
+            <Notification />
             <PageSeven />
             <PageEight />
             <Reel />
