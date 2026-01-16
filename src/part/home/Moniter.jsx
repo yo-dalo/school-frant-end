@@ -41,7 +41,7 @@ const Moniter = () => {
                 modules={[Autoplay, Pagination, Navigation]}
 
 
-                className="w-full md:min-h-[110vh] md:h-fit phone:min-h-[130vh]  h-[41vw]">
+                className="w-full md:min-h-[110vh] md:h-fit phone:min-h-[130vh]#  h-[41vw]">
 
                 {
                     resMsg?.map((e, i) => (
