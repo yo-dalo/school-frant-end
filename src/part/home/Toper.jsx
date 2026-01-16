@@ -30,9 +30,9 @@ const ToperPage = () => {
             </div>
 
             <div className="flex flex-row  flex-wrap phone:flex-nowrap phone:overflow-scroll  items-center justify-center gap-6">
-                {Toper.map((s) => (
+                {Toper.map((s,i) => (
                     <div
-                        key={s.position}
+                        key={i}
                         className={`flex-shrink-0 relative overflow-hidden ${colorMap[s.position] || "bg-main"
                             } rounded-sm max-w-xs  group`}
                     >
