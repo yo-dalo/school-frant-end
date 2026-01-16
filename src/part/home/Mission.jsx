@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PageSeven = () => {
+const Mission = () => {
     return (
 
         <div className='w-screen overflow-hidden min-h-screen py-6 bg-[linear-gradient(59.79deg,_#ECF0F1_67.3%,_#34495E_86.1%)]'>
@@ -18,26 +18,26 @@ const PageSeven = () => {
                 <div className="FC phone:gap-2">
                     <h1 className="text-7xl font-bold phone:text-3xl  phone:leading-6 leading-[0.9]">Vision & Mission</h1>
                     <div className="w-full  h-full bg-slate-800">
-                        <img className='FULL object-cover' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
+                        <img className='FULL object-cover' src="img/image/d2.jpg" alt="" />
                     </div>
 
 
                 </div>
                 <div className=" FC gap-3 phone:pt-6 pt-16">
                     <div className="BT w-full h-28  gap-3">
-                        <div className="FULL bg-slate-500"></div>
-                        <div className="FULL bg-gray-600"></div>
+                        <div className="FULL bg-slate-500"> <img className='object-cover' src="img/image/x1.jpeg" alt="" /></div>
+                        <div className="FULL bg-gray-600"> <img className='object-cover' src="img/image/a10.jpeg" alt="" /></div>
                     </div>
 
                     <div className="w-full h-full ">
-                        <img  className='object-cover' src="img/image/a12.jpeg" alt="" />
+                        <img className='object-cover' src="img/image/d2.jpg" alt="" />
                     </div>
 
 
 
                 </div>
                 <div className=" pt-1w6 phone:pt-6">
-                    <img  className='object-cover' src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" />
+                    <img className='object-cover' src="img/image/d3.jpg" alt="" />
                 </div>
 
 
@@ -61,4 +61,4 @@ const PageSeven = () => {
     )
 }
 
-export default PageSeven
+export default Mission
