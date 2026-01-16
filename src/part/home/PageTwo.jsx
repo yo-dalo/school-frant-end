@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const PageTwo = () => {
   return (
     <div className='w-screen  overflow-hidden h-min-screen '>
-      <div className="w-full h-[90vh]  overflow-visible phone:uppercase   center flex-col leading-[100.1px] bg-[linear-gradient(235.34deg,_#ECF0F1_36.62%,_#34495E_78.39%)]">
+      <div className="w-full h-[90vh]   overflow-visible phone:uppercase   center flex-col leading-[100.1px] bg-[linear-gradient(235.34deg,_#ECF0F1_36.62%,_#34495E_78.39%)]">
         <h2 className='main-text bg-[linear-gradient(86.85deg,_#FFFFFF_33.9%,_#000000_37.98%)]   md:h-20 h-32 md:text-7xl phone:text-6xl text-center w-full'>welcome</h2>
         <h2 className='main-text  bg-[linear-gradient(86.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] md:h-20 text-center phone:h-[8.5rem] h-32 md:text-7xl  phone:text-6xl w-full'>Yaduvanshi Degree </h2>
         <h2 className='main-text bg-[linear-gradient(86.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] md:h-20 md:text-7xl text-center h-32 phone:text-6xl w-full'>College</h2>
@@ -15,7 +15,7 @@ const PageTwo = () => {
 
       </div>
 
-      <div className="w-full h-[90vh]  py-9 bg-[linear-gradient(51deg,_#ECF0F1_57.12%,_#34495E_73.92%)] ">
+      <div className="w-full h-[90vh] phone:min-h-[145vw] py-9 bg-[linear-gradient(51deg,_#ECF0F1_57.12%,_#34495E_73.92%)] ">
 
         <div className="BT   gap-7 font-bold leading-tight  px-10">
           <h2 className='phone:none'>Welcome to Our School</h2>
