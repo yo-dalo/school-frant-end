@@ -2,14 +2,14 @@ import React from 'react'
 import { useAuth } from "../../context/AuthContext"
 import { Link } from 'react-router-dom';
 
-const PageSix = () => {
+const Notification = () => {
   const { resNotification } = useAuth();
   return (
     <div className='page-6 w-screen h-screen py-10 bg-main'>
 
       <div className="center phone:px-0 phone:gap-1    px-8 gap-10">
         <hr className='w-full ' />
-        <div className="whitespace-nowrap text-5xl">our moniters</div>
+        <div className="whitespace-nowrap text-5xl">Notices</div>
         <hr className='w-full' />
 
       </div>
@@ -24,12 +24,12 @@ const PageSix = () => {
 
           {resNotification?.map((e, i) => (
 
-            <Link to={`/notice/${e.Id}`} key={i} className=" py-9 phone:py-12 px-4 bg-white phone:w-full w-[15vw] relative   FC items-center phone:h-[35vw] h-[12vw]">
+            <Link to={`/notice/${e.Id}`} key={i} className=" py-9 phone:py-12 px-4  bg-white phone:w-full w-[15vw] relative   FC items-center phone:h-[35vw] h-[12vw]">
               <div style={{ background: Number(e?.Is_Important) ? "crimson" : "black" }} className="w-[80%] overflow-hidden   h-10 phone:text-3xl md:text-xl md:leading-[2.8rem]  text-2xl -top-4 -rotate-3 absolute  text-center font-bold bg-black text-white">
                 {e?.Date}
               </div>
 
-              <h2 className=" text-xl leading-4 font-black ">{e?.Name}
+              <h2 className=" text-xl  leading-4 font-black ">{e?.Name}
               </h2>
               <h4 className='text-xs py-2 leading-tight '>{e?.Title}
               </h4>
@@ -66,4 +66,4 @@ const PageSix = () => {
   )
 }
 
-export default PageSix
+export default Notification

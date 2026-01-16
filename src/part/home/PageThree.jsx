@@ -6,10 +6,10 @@ const PageThree = () => {
 
             <div className="  flex flex-col gap-3">
                 <div className="w-full phone:h-96  h-2/3 bg-red-700">
-                    <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" className="FULL object-cover" />
+                    <img src="img/image/d2.jpg" alt="" className="FULL object-cover" />
                 </div>
 
-                <h1 className="text-6xl md:text-4xl leading-[3rem]">BUILDING BRIGHTER FUTURES</h1>
+                <h1 className="text-6xl md:text-4xl  leading-[3rem]">BUILDING BRIGHTER FUTURES</h1>
 
                 <h6 className='w-1/2 phone:font-semibold leading-tight'>Admissions Open 2026-27</h6>
 
@@ -17,7 +17,7 @@ const PageThree = () => {
 
             <div className=" flex flex-col gap-3 ">
                 <div className="w-full h-2/4 phone:h-96  bg-red-700">
-                    <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" className="FULL object-cover" />
+                    <img src="img/image/d3.jpg" alt="" className="FULL object-cover" />
                 </div>
                 <h2 className="h2 text-xl phone:text-5xl font-medium">Overview</h2>
                 <h3 className=" text-lg phone:text-4xl ">Our College Journey</h3>
@@ -28,7 +28,7 @@ const PageThree = () => {
 
             <div className=" flex flex-col gap-3">
                 <div className="w-full h-1/3 phone:h-96  bg-red-700">
-                    <img src="https://i.pinimg.com/736x/2e/bb/49/2ebb49c2e9cee470cfbf140ff55908db.jpg" alt="" className="FULL object-cover" />
+                    <img src="img/image/d4.jpg" alt="" className="FULL object-cover" />
                 </div>
                 <h1 className=" text-xl font-medium  phone:text-5xl">Why Choose Ydc</h1>
 

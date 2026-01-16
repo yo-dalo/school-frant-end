@@ -2,17 +2,17 @@ import React from "react";
 
 const Toper = [
     { position: 1, name: "Aarav Sharma", father: "Rajesh Sharma", image: "https://i.pravatar.cc/300?img=1" },
-    { position: 2, name: "Vihaan Patel", father: "Amit Patel", image: "https://i.pravatar.cc/300?img=2" },
-    { position: 3, name: "Arjun Singh", father: "Vikram Singh", image: "https://i.pravatar.cc/300?img=3" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "https://i.pravatar.cc/300?img=4" },
-    { position: 5, name: "Rohan Gupta", father: "Anil Gupta", image: "https://i.pravatar.cc/300?img=5" },
+    { position: 2, name: "Vihaan Patel", father: "Amit Patel", image: "img/image/a18.jpg" },
+    { position: 3, name: "Arjun Singh", father: "Vikram Singh", image: "img/image/a18.jpg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/a18.jpg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/student/s2.jpeg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/a18.jpg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/a18.jpg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/student/s3.jpeg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/a18.jpg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/a16.jpg" },
+    { position: 4, name: "Ishaan Kumar", father: "Suresh Kumar", image: "img/image/student/s1.jpeg" },
+    { position: 5, name: "Rohan Gupta", father: "Anil Gupta", image: "img/image/a18.jpg" },
 ];
 
 const colorMap = {
@@ -22,17 +22,19 @@ const colorMap = {
 const ToperPage = () => {
     return (
         <div className="p-6 bg-main phone:min-h-fit min-h-screen">
-            <h1 className="text-3xl font-bold text-white text-center mb-8">
-                Topper
-            </h1>
+            <div className="center  px-8 py-9 gap-10">
+                <hr className='w-full' />
+                <div className="whitespace-nowrap text-mainOne text-5xl">Toppers</div>
+                <hr className='w-full' />
+
+            </div>
 
             <div className="flex flex-row  flex-wrap phone:flex-nowrap phone:overflow-scroll  items-center justify-center gap-6">
-                {Toper.map((s) => (
+                {Toper.map((s,i) => (
                     <div
-                        key={s.position}
-                        className={`flex-shrink-0 relative overflow-hidden ${
-                            colorMap[s.position] || "bg-main"
-                        } rounded-sm max-w-xs  group`}
+                        key={i}
+                        className={`flex-shrink-0 relative overflow-hidden ${colorMap[s.position] || "bg-main"
+                            } rounded-sm max-w-xs  group`}
                     >
                         <svg
                             className="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform duration-300"
@@ -69,7 +71,7 @@ const ToperPage = () => {
                                 }}
                             />
                             <img
-                                className="relative w-full h-40 object-cover  border-white"
+                                className="relative w-full h-40 object-contain  border-white"
                                 src={s.image}
                                 alt={s.name}
                             />
@@ -86,7 +88,7 @@ const ToperPage = () => {
                                         Father: {s.father}
                                     </span>
                                 </div>
-                                <span className="block bg-white rounded-full text-slate-800 text-xs font-bold px-3 py-2 leading-none">
+                                <span className="block none bg-white rounded-full text-slate-800 text-xs font-bold px-3 py-2 leading-none">
                                     TOP {s.position}
                                 </span>
                             </div>

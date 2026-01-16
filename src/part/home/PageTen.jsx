@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageTen = () => {
   return (
-    <div className="w-screen overflow-hidden min-h-screen flex flex-col items-center gap-6 sm:gap-8 px-4 sm:px-6 bg-[linear-gradient(180deg,_#34495E_0%,_#ECF0F1_100%)]">
+    <div className="w-screen none overflow-hidden min-h-screen flex flex-col items-center gap-6 sm:gap-8 px-4 sm:px-6 bg-[linear-gradient(180deg,_#34495E_0%,_#ECF0F1_100%)]">
 
       <h1 className='main-text text-center text-3xl sm:text-5xl lg:text-7xl leading-tight sm:leading-[0.9] lg:leading-[0.8]'>
         CELEBRATING OUR ACADEMIC STAR

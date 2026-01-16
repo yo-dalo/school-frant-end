@@ -11,7 +11,7 @@ const PageEight = () => {
 
             <div className=" FC  justify-center gap-9">
                 <p className='font-medium text-3xl leading-7'>Our school provides quality education with modern classrooms, experienced teachers, and a student-focused learning environment. We aim to build strong values, discipline, and knowledge to prepare students for a bright future.</p>
-                <h3 className="text-7xl ">Experience Beyond Classroom</h3>
+                <h3 className="text-7xl  ">Experience Beyond Classroom</h3>
                
 
 
