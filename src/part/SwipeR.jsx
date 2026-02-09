@@ -31,7 +31,7 @@ const SwipeR = () => {
 
 
     return (
-        <div className="w-screen z-50 h-[40vw] bg-main">
+        <div className="w-full z-50 h-[40vw] bg-main">
             <Swiper
 
 

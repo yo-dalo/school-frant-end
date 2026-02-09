@@ -22,8 +22,8 @@ const PageEleven = () => {
   };
 
   return (
-    <div className="w-screen  text-mainOne overflow-hidden h-fit flex justify-center items-center">
-      <div className="w-screen flex md:flex-col md:gap-10 md:h-fit phone:h-screen phone:flex-col bg-main h-[500px]">
+    <div className="w-full  text-mainOne overflow-hidden h-fit flex justify-center items-center">
+      <div className="w-full flex md:flex-col md:gap-10 md:h-fit phone:h-screen phone:flex-col bg-main h-[500px]">
 
         {/* ==================== PART 1: Highlighted Topper ==================== */}
         <div className="w-[1162px] md:w-full phone:w-full phone:gap-4 pl-3 pr-2 flex gap-9 h-full items-center justify-center">

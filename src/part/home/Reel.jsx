@@ -16,13 +16,13 @@ const Reel = () => {
   };
 
   return (
-    <div className="w-screen bg-main py-7  px-10">
-       <div className="center py-8  px-8 gap-10">
+    <div className="w-full bg-main py-7  px-10">
+      <div className="center py-8  px-8 gap-10">
         <hr className='w-full border-mainOne' />
         <div className="whitespace-nowrap  text-5xl">Reels</div>
         <hr className='w-full  border-mainOne' />
 
-      </div> 
+      </div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

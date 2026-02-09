@@ -8,7 +8,7 @@ import { useAuth } from "../../context/AuthContext";
 export const NavThree = () => {
     const { SetPhoneNav } = useAuth();
     return (
-        <div className="w-screen sticky top-0  z-[1000]   BT px-[4vw] h-12 bg-main border-b border-white/10">
+        <div className="w-full sticky top-0  z-[1000]   BT px-[4vw] h-12 bg-main border-b border-white/10">
             <div onClick={() => SetPhoneNav(true)} className="div phone:block md:block none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-list-icon lucide-list"><path d="M3 5h.01" /><path d="M3 12h.01" /><path d="M3 19h.01" /><path d="M8 5h13" /><path d="M8 12h13" /><path d="M8 19h13" /></svg></div>
 
             {index.map((item, idx) => (

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-main overflow-hidden text-white py-16 px-10">
+    <footer className="bg-main w-fit  overflow-hidden selection: text-white py-16 px-10">
       {/* Top Title */}
       <div className="flex items-center   justify-center gap-6 mb-16">
         <div className="flex-1 h-px bg-white/50"></div>

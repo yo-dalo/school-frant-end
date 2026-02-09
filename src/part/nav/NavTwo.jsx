@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const NavTwo = () => {
   return (
-    <div className='w-screen BT phone:px-5 px-16 phone:h-12 h-20 bg-white '>
+    <div className='w-full BT phone:px-5 px-16 phone:h-12 h-20 bg-white '>
 
       <Link to={"/"} className="h-full w-auto">
 

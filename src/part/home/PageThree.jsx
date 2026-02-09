@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 const PageThree = () => {
     return (
-        <div className="w-screen phone:py-8  bg-[linear-gradient(230.89deg,_#ECF0F1_69.63%,_#34495E_91.52%)] md:py-8 bg-mainOne  phone:grid-cols-1 overflow-hidden grid grid-cols-3 px-20 phone:px-0  md:gap-5 md:px-2 gap-14 min-h-screen">
+        <div className="w-full phone:py-8  bg-[linear-gradient(230.89deg,_#ECF0F1_69.63%,_#34495E_91.52%)] md:py-8 bg-mainOne  phone:grid-cols-1 overflow-hidden grid grid-cols-3 px-20 phone:px-0  md:gap-5 md:px-2 gap-14 min-h-screen">
 
             <div className="  flex flex-col gap-3">
                 <div className="w-full phone:h-96  h-2/3 bg-red-700">

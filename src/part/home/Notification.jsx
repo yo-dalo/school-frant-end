@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Notification = () => {
   const { resNotification } = useAuth();
   return (
-    <div className='page-6 w-screen h-screen py-10 bg-main'>
+    <div className='page-6 w-full h-screen py-10 bg-main'>
 
       <div className="center phone:px-0 phone:gap-1    px-8 gap-10">
         <hr className='w-full ' />

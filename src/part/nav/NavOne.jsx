@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 import { Link } from 'react-router-dom'
 const NavOne = () => {
     return (
-        <div className='w-screen phone:px-3 overflow-hidden flex justify-around  phone:h-12 h-7 bg-main '>
+        <div className='w-full phone:px-3 overflow-hidden flex justify-around  phone:h-12 h-7 bg-main '>
 
 
             <motion.div

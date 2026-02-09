@@ -18,8 +18,8 @@ const Moniter = () => {
 
 
 
-        <div className="w-screen overflow-hidden phone:px-0 px-10 py-10 FC bg-[linear-gradient(232.66deg,_#ECF0F1_58.64%,_#34495E_82.92%)] phone:gap-0 gap-10 min-h-screen">
-              <div className="center  px-8 gap-10">
+        <div className="w-full overflow-hidden phone:px-0 px-10 py-10 FC bg-[linear-gradient(232.66deg,_#ECF0F1_58.64%,_#34495E_82.92%)] phone:gap-0 gap-10 min-h-screen">
+            <div className="center  px-8 gap-10">
                 <hr className='w-full border-main' />
                 <div className="whitespace-nowrap  text-5xl">Our Moniters</div>
                 <hr className='w-full  border-main' />

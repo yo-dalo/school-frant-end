@@ -4,7 +4,7 @@ import TextSwiper from '../utils/TextSwiper'
 
 const PageOne = () => {
     return (
-        <div className='w-screen overflow-hidden  h-fit'>
+        <div className='w-full overflow-hidden  h-fit'>
             <SwipeR />
             <TextSwiper />
         </div>

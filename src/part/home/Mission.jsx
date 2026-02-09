@@ -3,14 +3,14 @@ import { motion } from "framer-motion"
 
 const Mission = () => {
     return (
-        <div className="w-screen pointer-events-auto overflow-hidden min-h-screen py-6 bg-[linear-gradient(59.79deg,_#ECF0F1_67.3%,_#34495E_86.1%)]">
+        <div className="w-full pointer-events-auto overflow-hidden min-h-screen py-6 bg-[linear-gradient(59.79deg,_#ECF0F1_67.3%,_#34495E_86.1%)]">
             <div className="center px-8 gap-10">
                 <hr className="w-full" />
                 <div className="whitespace-nowrap none text-5xl">our moniters</div>
                 <hr className="w-full" />
             </div>
 
-            <div className="w-screen flex pointer-events-auto phone:gap-1 phone:px-3 phone:min-h-[70vh] gap-14 px-12 py-9 min-h-[10vw]">
+            <div className="w-full flex pointer-events-auto phone:gap-1 phone:px-3 phone:min-h-[70vh] gap-14 px-12 py-9 min-h-[10vw]">
                 <motion.div
                     initial={{ minWidth: "10vw" }}
                     whileHover={{ minWidth: "70vw" }}

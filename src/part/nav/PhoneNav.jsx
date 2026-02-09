@@ -40,7 +40,7 @@ export const PhoneNav = ({ pageCats = [] }) => {
         </div>
       </ul>
 
-      <div className="w-screen">
+      <div className="w-full">
         {index.map((section, i) => (
           <div key={i} className="w-full">
             <div

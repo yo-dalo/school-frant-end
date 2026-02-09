@@ -7,7 +7,7 @@ const Layout = ({ title, children }) => {
     const { phoneNav } = useAuth();
     return (
 
-        <main style={{pointerEvents: phoneNav?"none":"auto" }} className=' w-screen relative  '>
+        <main style={{pointerEvents: phoneNav?"none":"auto" }} className=' w-full relative  '>
             <Nav />
             {children}
             <Footer />
