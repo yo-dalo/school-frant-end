@@ -54,8 +54,10 @@ export const NoticeDetail = () => {
                 </div>
 
                 <div className="p-10">
-                    <div className="prose max-w-none text-gray-700 whitespace-pre-line leading-relaxed text-lg">
-                        {resNotice?.Description}
+                    <div className="prose max-w-none text-gray-700  whitespace-pre-line leading-relaxed text-lg" dangerouslySetInnerHTML={{
+                        __html: resNotice?.Description
+                    }}>
+
                     </div>
 
                     <div className="mt-12 text-center">

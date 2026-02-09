@@ -12,10 +12,11 @@ const PagesLayout = ({ title, content, children }) => {
         <div className="min-h-screen bg-gray-100 text-gray-800 px-6 py-12">
           {/* Title and Content Paragraph */}
           <h1 className="text-4xl font-bold mb-6">{title}</h1>
-          <div className="text-lg leading-relaxed">
-            <>
-              {content}
-            </>
+          <div className="text-lg leading-relaxed" dangerouslySetInnerHTML={{
+            __html: content
+          }}>
+
+
 
           </div>
         </div>
