@@ -18,7 +18,7 @@ const Moniter = () => {
 
 
 
-        <div className="w-full overflow-hidden phone:px-0 px-10 py-10 FC bg-[linear-gradient(232.66deg,_#ECF0F1_58.64%,_#34495E_82.92%)] phone:gap-0 gap-10 min-h-screen">
+        <div className="w-full overflow-hidden phone:px-0 px-10 py-10 FC  phone:gap-0 gap-10 min-h-screen">
             <div className="center  px-8 gap-10">
                 <hr className='w-full border-main' />
                 <div className="whitespace-nowrap  text-5xl">Our Moniters</div>
@@ -95,7 +95,7 @@ const Moniter = () => {
 
             <div className=" px-72 phone:px-0 md:px-0   w-full">
 
-                <h1 className='main-text bg-[linear-gradient(81.95deg,_#000000_76.31%,_#FFFFFF_79.42%)] phone:text-8xl md:text-7xl md:leading-[0.8]  leading-[0.9] text-center '>NEWS & EVENTS</h1>
+                <h1 className='main-text '>NEWS & EVENTS</h1>
 
             </div>
 

@@ -3,7 +3,7 @@ import CircularLayout from '../CircularLayout'
 
 const PageEight = () => {
     return (
-        <div className="w-full overflow-hidden phone:FC   phone:px-3 phone:pt-36 bg-[linear-gradient(255.19deg,_#ECF0F1_78.59%,_#34495E_87.58%)] min-h-screen gap-10 grid px-14 grid-cols-2 ">
+        <div className="w-full overflow-hidden phone:FC   phone:px-3 phone:pt-36  min-h-screen gap-10 grid px-14 grid-cols-2 ">
 
 
 

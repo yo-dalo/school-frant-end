@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const Mission = () => {
     return (
-        <div className="w-full pointer-events-auto overflow-hidden min-h-screen py-6 bg-[linear-gradient(59.79deg,_#ECF0F1_67.3%,_#34495E_86.1%)]">
+        <div className="w-full pointer-events-auto overflow-hidden min-h-screen py-6 ">
             <div className="center px-8 gap-10">
                 <hr className="w-full" />
                 <div className="whitespace-nowrap none text-5xl">our moniters</div>

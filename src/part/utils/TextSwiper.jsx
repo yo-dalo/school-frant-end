@@ -11,28 +11,28 @@ const TextSwiper = () => {
           x: { repeat: Infinity, repeatType: "loop", duration: 60, ease: "linear" }
         }}
       >
-        <h1 className="text-5xl bg-[linear-gradient(86.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)]  main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
-        <h1 className="text-5xl bg-[linear-gradient(8.85deg,_#FFFFFF_33.9%,_#000000_37.98%)] main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl    main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl    main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
+        <h1 className="text-5xl   main-text">Ydc Mahendergarh</h1>
       </motion.div>
     </div>
   );
