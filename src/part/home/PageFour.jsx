@@ -30,7 +30,7 @@ const PageFour = () => {
 
         <div className="w-full overflow-hidden min-h-screen bg-[linear-gradient(67.33deg,_#ECF0F1_67.01%,_#2C3E50_77.04%,_#2C3E50_82.99%)]">
 
-            <h1 className='main-text bg-[linear-gradient(81.95deg,_#000000_76.31%,_#FFFFFF_79.42%)] phone:text-7xl md:text-7xl text-center py-4 leading-[0.9]'>
+            <h1 className='main-text bg-[linear-gradient(21.95deg,_#000000_6.31%,_#FFFFFF_79.42%)] phone:text-7xl md:text-7xl text-center py-4 leading-[0.9]'>
                 OUR JOURNEY HIGHLIGHTS
             </h1>
 
