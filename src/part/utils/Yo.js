@@ -1,9 +1,10 @@
 import axios from "axios";
+import subdomain from "./GetSubDomain";
 
 class Yo {
   static async get(url, config = { withCredentials: true }) {
     try {
-      const response = await axios.get(url, config);
+      const response = await axios.get(`${url}?branch=${subdomain}`, config);
       return response.data;
     } catch (error) {
       return error;

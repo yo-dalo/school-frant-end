@@ -20,7 +20,7 @@ const SwipeR = () => {
 
     useEffect(() => {
 
-        Yo.get("http://localhost:3000/api/client/poster").then((res) => {
+        Yo.get("/api/client/poster").then((res) => {
             setResData(res?.data?.data || [])
 
         })
