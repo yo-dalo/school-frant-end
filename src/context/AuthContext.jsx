@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { useNavigate , useLocation} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Yo from "../part/utils/Yo"
 
 
@@ -9,12 +9,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const go = useNavigate()
-  const subdomain = window.location.hostname.split(".")[0]
 
-
- useEffect(() => {
-   console.log(subdomain)
-  }, [subdomain])
 
   const [phoneNav, SetPhoneNav] = useState(false)
 
@@ -26,6 +21,7 @@ export const AuthProvider = ({ children }) => {
 
     Yo.get("/api/client/pages").then((res) => {
       setResData(res?.data)
+
     })
   }, [])
 
@@ -63,7 +59,7 @@ export const AuthProvider = ({ children }) => {
 
 
   return (
-    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav, resToper, subdomain }}>
+    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav, resToper }}>
       {children}
     </AuthContext.Provider>
   );
