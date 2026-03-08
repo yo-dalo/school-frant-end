@@ -16,6 +16,7 @@ import Layout from '../layout/Layout'
 import PageTwelve from '../part/home/PageTwelve'
 import Reel from '../part/home/Reel'
 import ToperPage from '../part/home/Toper'
+import Branch from '../part/home/Branch'
 
 const Home = () => {
     return (
@@ -28,6 +29,7 @@ const Home = () => {
             <Notification />
             <Mission />
             <PageEight />
+            <Branch />
             <Reel />
             <ToperPage />
             <PageNine />
