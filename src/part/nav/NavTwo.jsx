@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth } from '../../context/AuthContext'
 
 export const NavTwo = () => {
+  const { resBranchInfo } = useAuth()
   return (
     <div className='w-full BT phone:px-5 px-16 phone:h-12 h-20 bg-white '>
 
       <Link to={"/"} className="h-full w-auto">
 
-        <img src="/img/logo/logo.png" alt="" />
+        <img src={resBranchInfo?.Logo_Url ? `uploads/${resBranchInfo?.Logo_Url}` : '/img/logo/logo.png'} alt={`uploads/${resBranchInfo?.Logo_Url}`} />
 
       </Link>
 

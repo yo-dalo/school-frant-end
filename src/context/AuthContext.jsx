@@ -53,13 +53,24 @@ export const AuthProvider = ({ children }) => {
 
     Yo.get("/api/client/notification").then((res) => {
       setResNotification(res?.data?.data)
-      console.log(res?.data?.data)
+      // console.log(res?.data?.data)
+    })
+  }, [])
+
+  const [resBranchInfo, setBranchInfo] = useState({})
+
+  useEffect(() => {
+
+    Yo.get("/api/client/school-info").then((res) => {
+      setBranchInfo(res?.data[0])
+     
     })
   }, [])
 
 
+
   return (
-    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav, resToper }}>
+    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav, resToper, resBranchInfo }}>
       {children}
     </AuthContext.Provider>
   );
