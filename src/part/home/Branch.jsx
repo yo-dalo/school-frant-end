@@ -141,7 +141,7 @@ const institutions = [
         location: "Sohali",
         email: "itisohali@gmail.com",
         phone: "+91 9728396599",
-        image: "https://yaduvanshigroup.edu.in/assets/img/school/16.jpg",
+        image: "https://yaduvanshigroup.edu.in/assets/img/College/16.jpg",
         link: "https://yitisohali.yaduvanshigroup.edu.in/",
         category: "technical",
     }
@@ -159,7 +159,7 @@ const Branch = () => {
 
                 <div className="flex justify-center gap-4 mb-10 flex-wrap">
                     <button className="px-4 py-2 bg-gray-200">All</button>
-                    <button className="px-4 py-2 bg-gray-200">Schools</button>
+                    <button className="px-4 py-2 bg-gray-200">Colleges</button>
                     <button className="px-4 py-2 bg-gray-200">Technical Institutes</button>
                     <button className="px-4 py-2 bg-gray-200">Educational Institutes</button>
                 </div>

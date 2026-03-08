@@ -81,7 +81,7 @@ export const PhoneNav = ({ pageCats = [] }) => {
       </div>
 
       <div className="mt-6 py-3 px-4 bg-main text-white rounded-xl font-semibold text-center">
-        © School Menu
+        © College Menu
       </div>
     </motion.div>
   );

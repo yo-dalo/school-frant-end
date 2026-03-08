@@ -21,7 +21,7 @@ const PageThree = () => {
                 </div>
                 <h2 className="h2 text-xl phone:text-5xl font-medium">Overview</h2>
                 <h3 className=" text-lg phone:text-4xl ">Our College Journey</h3>
-                <p className=" text-xs phone:text-xl phone:font-light phone:px-3">Our school is committed to providing a balanced and holistic education that focuses on academic excellence, discipline, and character development. With well-qualified teachers, modern classrooms, and a safe learning environment, we ensure that every child receives the care and guidance they need to grow and succeed.</p>
+                <p className=" text-xs phone:text-xl phone:font-light phone:px-3">Our College is committed to providing a balanced and holistic education that focuses on academic excellence, discipline, and character development. With well-qualified teachers, modern classrooms, and a safe learning environment, we ensure that every child receives the care and guidance they need to grow and succeed.</p>
                 <p className="text-xs phone:text-xl phone:font-light phone:px-3">We emphasize values, creativity, communication skills, and overall personality development. Through a variety of co-curricular and extra-curricular activities, students get opportunities to explore their interests and unlock their full potential.</p>
                 <p className="text-xs phone:text-xl phone:font-light phone:px-3">Our goal is to build confident, responsible, and future-ready students who can excel in every field of life.</p>
             </div>
