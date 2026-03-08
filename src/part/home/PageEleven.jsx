@@ -5,7 +5,7 @@ const PageEleven = () => {
   const { resToper } = useAuth();
 
   // State to track the currently selected topper (default: first one)
-  const [selectedTopper, setSelectedTopper] = useState(null);
+  const [selectedTopper, setSelectedTopper] = useState({});
 
   // Set default to the 1st rank topper when data loads
   useEffect(() => {
@@ -13,12 +13,14 @@ const PageEleven = () => {
       // Find the topper with Rank "1" or index 0 as fallback
       const firstTopper = resToper.find(e => e.Rank === "1") || resToper[0];
       setSelectedTopper(firstTopper);
+      
     }
   }, [resToper]);
 
   // Handle click on any topper card
   const handleTopperClick = (topper) => {
     setSelectedTopper(topper);
+
   };
 
   return (
@@ -28,8 +30,7 @@ const PageEleven = () => {
         {/* ==================== PART 1: Highlighted Topper ==================== */}
         <div className="w-[1162px] md:w-full phone:w-full phone:gap-4 pl-3 pr-2 flex gap-9 h-full items-center justify-center">
           {/* Photo Placeholder */}
-          <img src={`uploads/${selectedTopper?.Image}`} className="w-[20vw] object-contain md:w-[70vw] phone:w-[45vw]  h-[269px] rounded-xl" />
-
+         <img src={selectedTopper?.Image ? `uploads/${selectedTopper.Image}` : "/no-image.png"} className="w-[20vw] object-contain md:w-[70vw] phone:w-[45vw]  h-[269px] rounded-xl" />
           {/* Name, Father, Rank */}
           <div className="flex flex-col phone:px-2 justify-center phone:h-full py-10 phone:py-0 phone:items-start items-end">
             <div>
