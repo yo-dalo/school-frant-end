@@ -14,7 +14,7 @@ const Pages = ({ id }) => {
     useEffect(() => {
         if (id) {
             getPageData(id)
-            console.log(pageData)
+            
         }
     }, [id])
 

@@ -29,11 +29,11 @@ const StudentAdmissionForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submitting form data:", formData);
+   
 
     try {
       const res = await Yo.post("/api/client/admission", formData);
-      console.log(res.message);
+      
       // alert(res.message || "Admission added successfully!");
 
       // Reset form to initial empty state after success
