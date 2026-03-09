@@ -8,28 +8,28 @@ const PageFour = () => {
     const data = [
         {
             tag: "STUDENTS///",
-            count: resBranchInfo.Students,
+            count: resBranchInfo?.Students,
             title: "Vibrant Student Community",
             desc1: "Our students are the heart of the institution, bringing passion, curiosity, and creativity to everything they do.",
             desc2: "They actively participate in academics, cultural activities, sports, and innovation programs, building skills that prepare them for a successful future."
         },
         {
             tag: "TEACHERS///",
-            count: resBranchInfo.Teachers,
+            count: resBranchInfo?.Teachers,
             title: "Dedicated & Experienced Faculty",
             desc1: "Our teachers are highly qualified professionals committed to providing quality education and guidance.",
             desc2: "They inspire students through modern teaching methods, mentorship, and a supportive learning environment."
         },
         {
             tag: "AWARDS///",
-            count: resBranchInfo.Awards,
+            count: resBranchInfo?.Awards,
             title: "Recognition & Achievements",
             desc1: "Our institution has received numerous awards for excellence in academics, innovation, and student development.",
             desc2: "These achievements reflect our commitment to maintaining high standards in education and overall growth."
         },
         {
             tag: "EXPERIENCE///",
-            count: resBranchInfo.Experience,
+            count: resBranchInfo?.Experience,
             title: "Years of Excellence",
             desc1: "With years of experience in education, we have built a strong foundation of knowledge, discipline, and innovation.",
             desc2: "Our journey reflects continuous growth, dedication to quality learning, and shaping future leaders."
@@ -55,23 +55,23 @@ const PageFour = () => {
                     <div key={i} className="w-full phone:FC phone:justify-start BT relative phone:relative gap-10 md:gap-5 phone:gap-5 border-t-4 border-black md:min-h-[200px] phone:min-h-[150vw] h-40">
 
                         <div className='-top-10 phone:-top-10 phone:left-0 md:-top-10 md:left-0 font-medium bg-black text-white px-9 pl-20 py-1 absolute'>
-                            {item.tag}
+                            {item?.tag}
                         </div>
 
                         <div className="w-1/2 phone:w-full center phone:h-fit h-full">
                             <h1 className='text-9xl hover:scale-125 duration-200 md:text-7xl'>
-                                {item.count}
+                                {item?.count}
                             </h1>
                         </div>
 
                         <div className="w-1/2 phone:w-full phone:text-xl gap-2 flex flex-col text-xs">
 
                             <p className="phone:font-light">
-                                <span className='font-medium'>{item.title}</span>: {item.desc1}
+                                <span className='font-medium'>{item?.title}</span>: {item?.desc1}
                             </p>
 
                             <p className="phone:font-light">
-                                {item.desc2}
+                                {item?.desc2}
                             </p>
 
                         </div>
