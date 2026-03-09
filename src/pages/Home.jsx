@@ -15,7 +15,7 @@ import Footer from '../part/footer/Footer'
 import Layout from '../layout/Layout'
 import PageTwelve from '../part/home/PageTwelve'
 import Reel from '../part/home/Reel'
-import ToperPage from '../part/home/Toper'
+// import ToperPage from '../part/home/Toper'
 import Branch from '../part/home/Branch'
 
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
             <PageEight />
             <Branch />
             <Reel />
-            <ToperPage />
+            {/* <ToperPage /> */}
             <PageNine />
             <PageTen />
             <PageEleven />
