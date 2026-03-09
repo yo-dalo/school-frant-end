@@ -21,7 +21,7 @@ export const NoticeDetail = () => {
 
         Yo.get("/api/client/notification/" + id).then((res) => {
             setResNotice(res?.data)
-            console.log(res?.data)
+            
         })
     }, [])
 

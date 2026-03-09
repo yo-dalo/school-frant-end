@@ -53,7 +53,7 @@ export const AuthProvider = ({ children }) => {
 
     Yo.get("/api/client/notification").then((res) => {
       setResNotification(res?.data?.data)
-      // console.log(res?.data?.data)
+      
     })
   }, [])
 
