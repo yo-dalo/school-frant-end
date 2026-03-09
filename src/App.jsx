@@ -13,10 +13,11 @@ import { useAuth } from "./context/AuthContext";
 import Noitc from './pages/Notic';
 import AdmissionSuccess from './pages/AdmissionSuccess';
 import PageNotFound from './pages/PageNotFound';
+import Pages from './pages/pages';
 
 function App() {
   const pathname = useLocation();
-  const { resData } = useAuth();
+  const { resData, getPageData } = useAuth();
 
 
   useEffect(() => {
@@ -96,10 +97,11 @@ function App() {
 
         {resData?.map((e, i) => (
           e.pages.map((e, i) => (
-            <Route path={`/${e.Name.toLowerCase().replace(/\s+/g, "-")}`} element={
-              <PagesLayout title={e?.title} content={e?.Page_Data}>
+            <Route path={`/db-page/${e.Name.toLowerCase().replace(/\s+/g, "-")}`} element={
+              <PagesLayout title={e?.title} content={""}>
                 <>
                   <PageTitle title={`${e?.Name}`} />
+                  <Pages id={e.Id} />
                 </>
               </PagesLayout>} />
           ))

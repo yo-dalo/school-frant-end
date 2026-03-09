@@ -9,7 +9,7 @@ export const NavTwo = () => {
 
       <Link to={"/"} className="h-full w-auto">
 
-        <img src={resBranchInfo?.Logo_Url ? `uploads/${resBranchInfo?.Logo_Url}` : '/img/logo/logo.png'} alt={`uploads/${resBranchInfo?.Logo_Url}`} />
+        <img src={resBranchInfo?.Logo_Url ? `/uploads/${resBranchInfo?.Logo_Url}` : '/img/logo/logo.png'} alt={`uploads/${resBranchInfo?.Logo_Url}`} />
 
       </Link>
 
