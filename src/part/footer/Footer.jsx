@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from '../../context/AuthContext'
 
 const Footer = () => {
+  const { resBranchInfo } = useAuth()
   return (
     <footer className="bg-main w-fit  overflow-hidden selection: text-white py-16 px-10">
       {/* Top Title */}
@@ -22,11 +24,11 @@ const Footer = () => {
         <div>
           <div className="flex  items-center gap-4 mb-6">
             <img
-              src="/img/logo/logo.png"
-              alt="Yaduvanshi"
+              src={resBranchInfo?.Logo_Url ? `/uploads/${resBranchInfo?.Logo_Url}` : "/img/logo/logo.png"}
+              alt={resBranchInfo?.School_Name}
               className="w-30 h-fit md:w-30 md:w-56 object-cover"
             />
-          
+
           </div>
           <p className="text-lg leading-relaxed text-white/90">
             Yaduvanshi Degree College, Mahendergarh is among the top residential
@@ -39,10 +41,10 @@ const Footer = () => {
         <div className="space-y-10">
           {/* Address */}
           <ul className="space-y-2 text-lg">
-            <li>Address : Bucholi Road, Mahendergarh</li>
-            <li>District- Mahendergarh, PIN-123029</li>
-            <li>Call Us : +91 8607062323, +91 8607062424, +91 9729429766</li>
-            <li>Email : ydcmhg@gmail.com</li>
+            <li>Address : {resBranchInfo?.Address}</li>
+            <li>District - {resBranchInfo?.City}, PIN - {resBranchInfo?.Pin_Code}</li>
+            <li>Call Us : +91 {resBranchInfo?.Alternate_Phone}</li>
+            <li>Email : {resBranchInfo?.Email}</li>
           </ul>
 
           {/* Quick Links */}

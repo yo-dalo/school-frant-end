@@ -1,28 +1,38 @@
 import React from 'react'
+import { useAuth } from '../../context/AuthContext'
+
 
 const PageFour = () => {
+    const { resBranchInfo } = useAuth()
 
     const data = [
         {
-            tag: "STUDENT///",
-            count: "3000+",
-            title: "We offer design that",
-            desc1: "works for you - Our studio designs interiors with functionality and aesthetics in mind.",
-            desc2: "Our diverse student community brings energy, creativity, and enthusiasm to campus life. They actively participate in academics, cultural events, and extracurricular activities. Every student is encouraged to grow intellectually and personally."
+            tag: "STUDENTS///",
+            count: resBranchInfo.Students,
+            title: "Vibrant Student Community",
+            desc1: "Our students are the heart of the institution, bringing passion, curiosity, and creativity to everything they do.",
+            desc2: "They actively participate in academics, cultural activities, sports, and innovation programs, building skills that prepare them for a successful future."
         },
         {
-            tag: "FACULTY///",
-            count: "150+",
-            title: "Experienced Faculty",
-            desc1: "Our faculty members are highly qualified and dedicated to delivering quality education.",
-            desc2: "They mentor students, guide research, and contribute to innovation through modern teaching methods and practical exposure."
+            tag: "TEACHERS///",
+            count: resBranchInfo.Teachers,
+            title: "Dedicated & Experienced Faculty",
+            desc1: "Our teachers are highly qualified professionals committed to providing quality education and guidance.",
+            desc2: "They inspire students through modern teaching methods, mentorship, and a supportive learning environment."
         },
         {
-            tag: "PROGRAMS///",
-            count: "50+",
-            title: "Innovative Programs",
-            desc1: "We provide industry-focused programs designed to meet current market demands.",
-            desc2: "Our curriculum encourages creativity, critical thinking, and hands-on learning experiences."
+            tag: "AWARDS///",
+            count: resBranchInfo.Awards,
+            title: "Recognition & Achievements",
+            desc1: "Our institution has received numerous awards for excellence in academics, innovation, and student development.",
+            desc2: "These achievements reflect our commitment to maintaining high standards in education and overall growth."
+        },
+        {
+            tag: "EXPERIENCE///",
+            count: resBranchInfo.Experience,
+            title: "Years of Excellence",
+            desc1: "With years of experience in education, we have built a strong foundation of knowledge, discipline, and innovation.",
+            desc2: "Our journey reflects continuous growth, dedication to quality learning, and shaping future leaders."
         }
     ]
 
