@@ -44,7 +44,14 @@ export const AuthProvider = ({ children }) => {
     })
   }, [])
 
+  const [quickLinks, setQuickLinks] = useState([])
+  useEffect(() => {
 
+    Yo.get("/api/client/quick-link").then((res) => {
+      setQuickLinks(res?.data?.data)
+
+    })
+  }, [])
 
 
 
@@ -53,7 +60,7 @@ export const AuthProvider = ({ children }) => {
 
     Yo.get("/api/client/notification").then((res) => {
       setResNotification(res?.data?.data)
-      
+
     })
   }, [])
 
@@ -63,14 +70,14 @@ export const AuthProvider = ({ children }) => {
 
     Yo.get("/api/client/school-info").then((res) => {
       setBranchInfo(res?.data[0])
-     
+
     })
   }, [])
 
 
 
   return (
-    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav, resToper, resBranchInfo }}>
+    <AuthContext.Provider value={{ resData, resMsg, resNotification, phoneNav, SetPhoneNav,quickLinks, resToper, resBranchInfo }}>
       {children}
     </AuthContext.Provider>
   );
